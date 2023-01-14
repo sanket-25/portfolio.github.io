@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap');
+
+
+
+#Home {
+    background-color: black;
+    color: darkred;
+    background-color: #673ab7;
+    background-color: black;
+    color: #ffc107;
+    height: 100vh;
+}
+
+
+
+.sanket-h1 {
+    position: static;
+    z-index: 3;
+    font-size: larger;
+    padding: 1em;
+    margin-left: 4em;
+}
+
+.mememe {
+    position: absolute;
+    right: 10em;
+    bottom: 0em;
+
+}
+
+
+
+.icosahedron {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: 12em;
+    width: fit-content;
+    
+    
+}
+
+
+.nav-pc {
+    position: absolute;
+    left: 5em;
+    padding: 1em;
+
+
+}
+
+.nav-pc .nav-hall {
+    display: inline;
+}
+
+.nav-hall-ul {
+    list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-hall {
+    text-decoration: none;
+    list-style-type: none;
+    color: #ffc107;
+    padding: 0.2em;
+    font-size: large;
+    
+    
+
+
+}
+
+
+.sanket-h1-0 {
+    position: absolute;
+    z-index: 3;
+    font-size: xxx-large;
+    top: 6em;
+    left: 1em;
+    font-family: 'Bungee Spice', cursive;
+}
+
+.d-f {
+    position: absolute;
+    z-index: 3;
+    font-size: xx-large;
+    top: 11em;
+    left: 1.5em;
+    font-family: 'Londrina Outline', cursive;
+    font-family: 'Bungee Outline', cursive;
+}
+
+
+
+
+
+
+#About {
+    background-color: red;
+    display: flex;
+    position: relative;
+}
+
+#About .left-about {
+    background-color: darkred;
+    width: 50%;
+    
+
+}
+
+
+
+#About .left-about h2 {
+    color: #ffc107;
+    text-align: center;
+    position: relative;
+    font-size: 10vw;
+    top: 50vh;
+    font-family: 'Londrina Outline', cursive;
+}
+
+#About .right-about {
+/*    position: relative;*/
+    width: 50%;
+    left: 50%;
+    background-color: white;
+
+
+}
+
+#About .right-about .text-for-padding {
+    padding: 2em;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:700,900');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 14px;
+  font-family: 'Raleway', sans-serif;
+}
+a{
+  text-decoration: none;
+}
+
+/* Sections */
+.section{
+  height: 100vh;
+  min-height: 500px;
+  position: relative;
+}
+
+/* Containers */
+.content-container{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  clip: rect(auto, auto, auto, auto);
+  pointer-events: none;
+}
+.content-inner{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  padding: 0;
+  z-index: 99;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  will-change: transform;
+  -webkit-perspective: 1000;
+  perspective: 1000;
+  pointer-events: all;
+}
+.content-center{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+/* Aesthetics */
+.top-section{
+  background: linear-gradient(135deg, #f4583a 0%,#cd1e38 100%);
+}
+.bottom-section{
+  background: #d4fef2;
+}
+.section h1{
+  font-size: 200px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+}
+.section p,
+.section a{
+  font-weight: 700;
+  letter-spacing: 7px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.content-theme-dark h1{
+  color: #E33E39;
+  text-shadow: 0 20px 40px rgba(0,0,0,.5);
+}
+.content-theme-dark p,
+.content-theme-dark a{
+  color: #FEA98D;
+}
+.content-theme-light h1{
+  color:#062930;
+  text-shadow: 0 20px 40px rgba(0,0,0,.5);
+}
+.content-theme-light p,
+.content-theme-light a{
+  color: #728E93;
+}
+
+
+
+
+
+
+.work-boxes {
+    background-color: black;
+}
+
+
+
+
+.work-box img{
+    width: 90%;
+    border-radius: 7em;
+    padding: 2em;
+}
