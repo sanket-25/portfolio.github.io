@@ -1,0 +1,512 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ruslan+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rammetto+One&display=swap');
+
+
+
+
+
+
+
+
+
+
+
+
+
+html {
+    background-color: black;
+}
+
+#Home {
+    background-color: black;
+    color: darkred;
+    background-color: #673ab7;
+    background-color: black;
+    color: #ffc107;
+    height: 100vh;
+}
+
+
+
+.sanket-h1 {
+    position: static;
+    z-index: 3;
+    font-size: larger;
+    padding: 1em;
+    margin-left: 4em;
+}
+
+.mememe {
+    position: absolute;
+    right: 10em;
+    bottom: 0em;
+
+}
+
+
+
+.icosahedron {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: 12em;
+    width: fit-content;
+    
+    
+}
+
+
+.nav-pc {
+    position: absolute;
+    left: 5em;
+    padding: 1em;
+
+
+}
+
+.nav-pc .nav-hall {
+    display: inline;
+}
+
+.nav-hall-ul {
+    list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-hall {
+    text-decoration: none;
+    list-style-type: none;
+    color: #ffc107;
+    padding: 0.2em;
+    font-size: large;
+    
+    
+
+
+}
+
+
+.nav-hall a:hover {
+    color: red;
+
+}
+
+
+
+.sanket-h1-0 {
+    position: absolute;
+    z-index: 3;
+    font-size: xxx-large;
+    top: 6em;
+    left: 1em;
+    font-family: 'Bungee Spice', cursive;
+}
+
+.d-f {
+    position: absolute;
+    z-index: 3;
+    font-size: xx-large;
+    top: 11em;
+    left: 1.5em;
+    font-family: 'Londrina Outline', cursive;
+    font-family: 'Bungee Outline', cursive;
+}
+
+
+
+
+
+
+#About {
+    background-color: red;
+    display: flex;
+    position: relative;
+    z-index: 100;
+}
+
+#About .left-about {
+    background-color: darkred;
+    width: 50%;
+    
+
+}
+
+
+
+#About .left-about h2 {
+    color: #ffc107;
+    text-align: center;
+    display: flex;
+    position: sticky;
+    font-size: 8vw;
+    top: 42%;
+    font-family: 'Londrina Outline', cursive;
+    font-family: 'Ruslan Display', cursive;
+    font-family: 'Rammetto One', cursive;
+    align-content: center;
+    justify-content: center;
+}
+
+.about-img {
+    display: flex;
+    position: sticky;
+    top: 42%;
+    width: 30%;
+}
+
+
+
+
+
+#About .right-about {
+/*    position: relative;*/
+    width: 50%;
+    background-color: white;
+
+
+}
+
+#About .right-about .text-for-padding {
+    padding: 3em;
+}
+
+.hey p {
+    color: black;
+    font-size: x-large;
+}
+
+.hey-work .w1 {
+    font-size: x-large;
+}
+
+.hey-work .w2 {
+    font-size: large;
+
+}
+
+.hey-work .w3 {
+    font-size: initial;
+}
+
+.w {
+    margin-top: 1em;
+}
+
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:700,900');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 14px;
+  font-family: 'Raleway', sans-serif;
+}
+a{
+  text-decoration: none;
+}
+
+/* Sections */
+.section{
+  height: 100vh;
+  min-height: 500px;
+  position: relative;
+}
+
+/* Containers */
+.content-container{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  clip: rect(auto, auto, auto, auto);
+  pointer-events: none;
+}
+.content-inner{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  padding: 0;
+  z-index: 99;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  will-change: transform;
+  -webkit-perspective: 1000;
+  perspective: 1000;
+  pointer-events: all;
+}
+.content-center{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+/* Aesthetics */
+.top-section{
+  background: linear-gradient(135deg, #f4583a 0%,#cd1e38 100%);
+}
+.bottom-section{
+  background: #d4fef2;
+}
+.section h1{
+  font-size: 200px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+}
+.section p,
+.section a{
+  font-weight: 700;
+  letter-spacing: 7px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.content-theme-dark h1{
+  color: #E33E39;
+  text-shadow: 0 20px 40px rgba(0,0,0,.5);
+}
+.content-theme-dark p,
+.content-theme-dark a{
+  color: #FEA98D;
+}
+.content-theme-light h1{
+  color:#062930;
+  text-shadow: 0 20px 40px rgba(0,0,0,.5);
+}
+.content-theme-light p,
+.content-theme-light a{
+  color: #728E93;
+}
+
+
+.services-h {
+    font-family: sans-serif;
+    color: white;
+    font-size: 10vw;
+    left: 0em;
+    top: 35vw;
+    position: relative;
+
+
+
+}
+
+
+.ser {
+    background-color: #5d38e9;
+    
+    display: flex;
+}
+
+
+.ser h3 {
+    color: #ffc107;
+    padding: 1em;
+    margin-top: ;
+}
+
+
+.left-services {
+
+    width: 40%;
+    
+
+}
+
+
+
+.left-services h3 {
+    color: #ffc107;
+
+    display: flex;
+
+    font-size: 3vw;
+
+    font-family: 'Londrina Outline', cursive;
+/*    font-family: 'Ruslan Display', cursive;
+    font-family: 'Rammetto One', cursive;*/
+
+}
+
+
+
+
+
+
+
+
+
+.work-boxes {
+    background-color: black;
+}
+
+
+
+
+.work-box img{
+    width: 90%;
+    border-radius: 7em;
+    padding: 2em;
+}
+
+
+
+
+
+
+
+
+
+
+#Contact {
+    position: relative;
+}
+
+
+
+
+.background{
+    width: 430px;
+    height: 520px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 30%;
+    top: 40vw;
+}
+.background .shape{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    border-radius: 50%;
+}
+.shape:first-child{
+    background: linear-gradient(
+        #9b22ea,
+        #bf23f6
+    );
+    left: -80px;
+    top: -80px;
+}
+.shape:last-child{
+    background: linear-gradient(
+        to right,
+        #ff512f,
+        #f09819
+    );
+    right: -30px;
+    bottom: -80px;
+}
+form{
+    height: 520px;
+    width: 430px;
+    background-color: rgba(255,255,255,0.07);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 40vw;
+    left: 30%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 50px 35px;
+}
+form *{
+    font-family: 'Poppins',sans-serif;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}
+form h3{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 42px;
+}
+form h3 span{
+    display: block;
+    font-size: 16px;
+    font-weight: 300;
+    color: #e5e5e5;
+}
+label{
+    display: block;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 500;
+}
+input{
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(255,255,255,0.07);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+}
+::placeholder{
+    color: #e5e5e5;
+}
+button{
+    margin-top: 50px;
+    width: 100%;
+    background-color: #ffffff;
+    color: #080710;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.being {
+    display: flex;
+}
+
+.left-contact {
+    width: 50%;
+
+}
+
+.right-contact {
+    width: 50%;
+    margin-top: 20vw;
+
+}
+
+.right-contact p {
+    color: white;
+    font-size: 1.5vw;
+    padding: 1vw;
+
+}
+
+.right-contact a {
+    color: red;
+    font-size: 1.5vw;
+    padding: 1vw;
+}

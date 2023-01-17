@@ -1,8 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ruslan+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rammetto+One&display=swap');
 
 
+
+
+
+
+
+
+
+
+
+
+
+html {
+    background-color: black;
+}
 
 #Home {
     background-color: black;
@@ -76,6 +92,13 @@
 }
 
 
+.nav-hall a:hover {
+    color: red;
+
+}
+
+
+
 .sanket-h1-0 {
     position: absolute;
     z-index: 3;
@@ -104,6 +127,7 @@
     background-color: red;
     display: flex;
     position: relative;
+    z-index: 100;
 }
 
 #About .left-about {
@@ -118,24 +142,68 @@
 #About .left-about h2 {
     color: #ffc107;
     text-align: center;
-    position: relative;
-    font-size: 10vw;
-    top: 50vh;
+    display: flex;
+    position: sticky;
+    font-size: 8vw;
+    top: 42%;
     font-family: 'Londrina Outline', cursive;
+    font-family: 'Ruslan Display', cursive;
+    font-family: 'Rammetto One', cursive;
+    align-content: center;
+    justify-content: center;
 }
+
+.about-img {
+    display: flex;
+    position: sticky;
+    top: 42%;
+    width: 30%;
+}
+
+
+
+
 
 #About .right-about {
 /*    position: relative;*/
     width: 50%;
-    left: 50%;
     background-color: white;
 
 
 }
 
 #About .right-about .text-for-padding {
-    padding: 2em;
+    padding: 3em;
 }
+
+.hey p {
+    color: black;
+    font-size: x-large;
+}
+
+.hey-work .w1 {
+    font-size: x-large;
+}
+
+.hey-work .w2 {
+    font-size: large;
+
+}
+
+.hey-work .w3 {
+    font-size: initial;
+}
+
+.w {
+    margin-top: 1em;
+}
+
+
+
+
+
+
+
 
 @import url('https://fonts.googleapis.com/css?family=Raleway:700,900');
 
@@ -234,6 +302,59 @@ a{
 }
 
 
+.services-h {
+    font-family: sans-serif;
+    color: white;
+    font-size: 10vw;
+    left: 0em;
+    top: 35vw;
+    position: relative;
+
+
+
+}
+
+
+.ser {
+    background-color: #5d38e9;
+    
+    display: flex;
+}
+
+
+.ser h3 {
+    color: #ffc107;
+    padding: 1em;
+    margin-top: ;
+}
+
+
+.left-services {
+
+    width: 40%;
+    
+
+}
+
+
+
+.left-services h3 {
+    color: #ffc107;
+
+    display: flex;
+
+    font-size: 3vw;
+
+    font-family: 'Londrina Outline', cursive;
+/*    font-family: 'Ruslan Display', cursive;
+    font-family: 'Rammetto One', cursive;*/
+
+}
+
+
+
+
+
 
 
 
@@ -249,4 +370,143 @@ a{
     width: 90%;
     border-radius: 7em;
     padding: 2em;
+}
+
+
+
+
+
+
+
+
+
+
+#Contact {
+    position: relative;
+}
+
+
+
+
+.background{
+    width: 430px;
+    height: 520px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 30%;
+    top: 40vw;
+}
+.background .shape{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    border-radius: 50%;
+}
+.shape:first-child{
+    background: linear-gradient(
+        #9b22ea,
+        #bf23f6
+    );
+    left: -80px;
+    top: -80px;
+}
+.shape:last-child{
+    background: linear-gradient(
+        to right,
+        #ff512f,
+        #f09819
+    );
+    right: -30px;
+    bottom: -80px;
+}
+form{
+    height: 520px;
+    width: 430px;
+    background-color: rgba(255,255,255,0.07);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 40vw;
+    left: 30%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 50px 35px;
+}
+form *{
+    font-family: 'Poppins',sans-serif;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}
+form h3{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 42px;
+}
+form h3 span{
+    display: block;
+    font-size: 16px;
+    font-weight: 300;
+    color: #e5e5e5;
+}
+label{
+    display: block;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 500;
+}
+input{
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(255,255,255,0.07);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+}
+::placeholder{
+    color: #e5e5e5;
+}
+button{
+    margin-top: 50px;
+    width: 100%;
+    background-color: #ffffff;
+    color: #080710;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.being {
+    display: flex;
+}
+
+.left-contact {
+    width: 50%;
+
+}
+
+.right-contact {
+    width: 50%;
+    margin-top: 20vw;
+
+}
+
+.right-contact p {
+    color: white;
+    font-size: 1.5vw;
+    padding: 1vw;
+
+}
+
+.right-contact a {
+    color: red;
+    font-size: 1.5vw;
+    padding: 1vw;
 }

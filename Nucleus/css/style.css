@@ -7,3 +7,74 @@
 
 * {}
 
+
+
+#box div
+{
+position: absolute;
+height: 500px;
+width: 500px;
+/*border: 1px solid lightgrey;*/
+background: rgba(255,200,100,0.8);
+text-align: center;
+font-size: 200px;
+}
+
+#box
+{
+-webkit-animation-name: animation;
+-webkit-animation-timing-function: ease-in-out;
+-webkit-animation-iteration-count: infinite;
+-webkit-animation-duration: 9s;
+margin:50;
+-webkit-transform-style: preserve-3d;
+-webkit-transform-origin: 250px 250px 0;
+}
+
+#box .one
+{ 
+-webkit-transform: translateZ(250px);
+}
+#box .two
+{ 
+-webkit-transform: rotateX(-90deg) translateZ(250px);
+}
+#box .three 
+{
+-webkit-transform: rotateY(90deg) rotateX(90deg) translateZ(250px);
+}
+#box .four 
+{
+-webkit-transform: rotateY(180deg) rotateZ(90deg) translateZ(250px);
+}
+#box .five
+{ 
+-webkit-transform: rotateY(-90deg) rotateZ(90deg) translateZ(250px);
+}
+#box .six 
+{
+-webkit-transform: rotateY(90deg) translateZ(250px);
+}
+
+@-webkit-keyframes animation
+{
+from,to{}
+16% { -webkit-transform: rotateY(-90deg);}
+33% { -webkit-transform: rotateY(-90deg) rotateZ(135deg);}
+50% { -webkit-transform: rotateY(225deg) rotateZ(135deg);}
+66% { -webkit-transform: rotateY(135deg) rotateX(135deg);}
+83% { -webkit-transform: rotateX(135deg);}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
