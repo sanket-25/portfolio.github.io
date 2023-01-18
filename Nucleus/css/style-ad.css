@@ -14,11 +14,24 @@
 
 
 
-
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 
 html {
     background-color: black;
+    max-width: 100%;
+    overflow-x: hidden;
 }
+
+#view {
+    display: none;
+}
+
+
+
+
 
 #Home {
     background-color: black;
@@ -36,7 +49,7 @@ html {
     z-index: 3;
     font-size: larger;
     padding: 1em;
-    margin-left: 4em;
+/*    margin-left: 4em;*/
 }
 
 .mememe {
@@ -63,7 +76,7 @@ html {
 
 .nav-pc {
     position: absolute;
-    left: 5em;
+/*    left: 5em;*/
     padding: 1em;
 
 
@@ -83,7 +96,7 @@ html {
     text-decoration: none;
     list-style-type: none;
     color: #ffc107;
-    padding: 0.2em;
+    padding: 0.1em;
     font-size: large;
     
     
@@ -103,7 +116,7 @@ html {
     position: absolute;
     z-index: 3;
     font-size: xxx-large;
-    top: 6em;
+    top: 3em;
     left: 1em;
     font-family: 'Bungee Spice', cursive;
 }
@@ -112,7 +125,7 @@ html {
     position: absolute;
     z-index: 3;
     font-size: xx-large;
-    top: 11em;
+    top: 9em;
     left: 1.5em;
     font-family: 'Londrina Outline', cursive;
     font-family: 'Bungee Outline', cursive;
@@ -125,14 +138,15 @@ html {
 
 #About {
     background-color: red;
-    display: flex;
+/*    display: flex;*/
     position: relative;
     z-index: 100;
 }
 
 #About .left-about {
     background-color: darkred;
-    width: 50%;
+/*    width: 50%;*/
+    height: 100vh;
     
 
 }
@@ -166,7 +180,7 @@ html {
 
 #About .right-about {
 /*    position: relative;*/
-    width: 50%;
+/*    width: 50%;*/
     background-color: white;
 
 
@@ -271,7 +285,7 @@ a{
   background: #d4fef2;
 }
 .section h1{
-  font-size: 200px;
+  font-size: 15vh;
   font-weight: 900;
   text-transform: uppercase;
   text-align: center;
@@ -368,7 +382,7 @@ a{
 
 .work-box img{
     width: 90%;
-    border-radius: 7em;
+    border-radius: 4em;
     padding: 2em;
 }
 
@@ -383,6 +397,7 @@ a{
 
 #Contact {
     position: relative;
+    margin-top: 50vw;
 }
 
 
@@ -392,8 +407,8 @@ a{
     width: 430px;
     height: 520px;
     position: absolute;
-    transform: translate(-50%,-50%);
-    left: 30%;
+/*    transform: translate(-50%,-50%);*/
+/*    left: 30%;*/
     top: 40vw;
 }
 .background .shape{
@@ -420,11 +435,11 @@ a{
     bottom: -80px;
 }
 form{
-    height: 520px;
-    width: 430px;
+/*    height: 520px;*/
+/*    width: 430px;*/
     background-color: rgba(255,255,255,0.07);
-    position: absolute;
-    transform: translate(-50%,-50%);
+/*    position: absolute;*/
+/*    transform: translate(-50%,-50%);*/
     top: 40vw;
     left: 30%;
     border-radius: 10px;
@@ -485,6 +500,7 @@ button{
 
 .being {
     display: flex;
+    display: none;
 }
 
 .left-contact {
@@ -509,4 +525,102 @@ button{
     color: red;
     font-size: 1.5vw;
     padding: 1vw;
+}
+
+.only-ad-contact {
+    color: white;
+    margin-top: 15vw;
+
+}
+
+.only-ad-contact p {
+    padding: 5vw;
+
+}
+
+.only-ad-contact a {
+    color: red;
+    padding: 5vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.switch input
+{
+  display: none;
+}
+
+.switch 
+{
+  display: inline-block;
+  width: 60px; /*=w*/
+  height: 30px; /*=h*/
+/*  margin: 4px;*/
+  transform: translateY(50%);
+  position: absolute;
+  top: -2em;
+  right: 0.5em;
+}
+
+.slider
+{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 30px;
+  box-shadow: 0 0 0 2px #777, 0 0 4px #777;
+  cursor: pointer;
+  border: 4px solid transparent;
+  overflow: hidden;
+  transition: 0.2s;
+}
+
+.slider:before
+{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #777;
+  border-radius: 30px;
+  transform: translateX(-30px); /*translateX(-(w-h))*/
+  transition: 0.2s;
+}
+
+input:checked + .slider:before 
+{
+  transform: translateX(30px); /*translateX(w-h)*/
+  background-color: limeGreen;
+}
+
+input:checked + .whiter:before 
+{
+  transform: translateX(30px); /*translateX(w-h)*/
+  background-color: darkred;
+}
+
+input:checked + .slider 
+{
+  box-shadow: 0 0 0 2px limeGreen, 0 0 8px limeGreen;
 }

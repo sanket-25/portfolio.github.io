@@ -10,8 +10,15 @@
 
     <!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="./Nucleus/css/style.css">
+
+
+
 	<link rel="stylesheet" type="text/css" href="./Nucleus/css/style-pc.css" media="screen and (min-device-width: 800px">
-	<link rel="stylesheet" type="text/css" href="./Nucleus/css/style-ad.css" media='screen and (min-width: 0px) and (max-width: 800px)'>
+  <link rel="stylesheet" type="text/css" href="./Nucleus/css/style-ad.css" media='screen and (min-width: 200px) and (max-width: 800px)'>
+	<link rel="stylesheet" type="text/css" href="./Nucleus/css/style-ad.css" media='screen and (min-width: 0px) and (max-width: 400px)'>
+
+
+
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 	<!-- JAVASCRIPT -->
@@ -68,66 +75,6 @@
 	
 
 
-.switch input
-{
-  display: none;
-}
-
-.switch 
-{
-  display: inline-block;
-  width: 60px; /*=w*/
-  height: 30px; /*=h*/
-/*  margin: 4px;*/
-  transform: translateY(50%);
-  position: absolute;
-  top: -2em;
-  right: 6.5em;
-}
-
-.slider
-{
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  border-radius: 30px;
-  box-shadow: 0 0 0 2px #777, 0 0 4px #777;
-  cursor: pointer;
-  border: 4px solid transparent;
-  overflow: hidden;
-  transition: 0.2s;
-}
-
-.slider:before
-{
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 100%;
-  background-color: #777;
-  border-radius: 30px;
-  transform: translateX(-30px); /*translateX(-(w-h))*/
-  transition: 0.2s;
-}
-
-input:checked + .slider:before 
-{
-  transform: translateX(30px); /*translateX(w-h)*/
-  background-color: limeGreen;
-}
-
-input:checked + .whiter:before 
-{
-  transform: translateX(30px); /*translateX(w-h)*/
-  background-color: darkred;
-}
-
-input:checked + .slider 
-{
-  box-shadow: 0 0 0 2px limeGreen, 0 0 8px limeGreen;
-}
 
 
 </style>
@@ -264,7 +211,7 @@ document.getElementById('dark-mode-btn').addEventListener('click', function (e) 
 
 
 	<div class="mememe">
-		<img src="./Nucleus/images/bitmoji.png">
+		<img src="./Nucleus/images/bitmoji0.png">
 	</div>
 
 
@@ -326,6 +273,7 @@ document.getElementById('dark-mode-btn').addEventListener('click', function (e) 
 			<h2 about-h>ABOUT</h2>
 			<!-- <img src="./Me.png" class="about-img"> -->
  		</div>
+
  		<div class="right-about">
  			<div class="text-for-padding">
  				<div class="hey w">
@@ -681,46 +629,6 @@ window.requestAnimationFrame(animateMe);
 
 
 
-<!-- 
- <section id="Contact" style="height: 50vh;">
- 	<div style="position: relative; top: 20vh;">
- 		<div class="column--s-12 padding--s-1 padding--m-2">
-								<p>
-									<strong>
-										If you want to collaborate on crafting amazing experience for people – you are very welcome to contact me.
-									</strong>
-								</p>
-
-								<p>
-									I am available for freelance projects and full-time employment.
-								</p>
-
-								<h5 class=""><center>Sanket Dhuri</center></h5>
-								<p>
-									Freelancer &amp; Developer <br>
-									<a href="mailto:contact.sanketdhuri@gmail.com">contact.sanketdhuri@gmail.com</a><br>
-								</p>
-								<p>&nbsp;</p>
-								
-							</div>
- 	</div>
- 	 <center> <h1> Student Login Form </h1> </center>   
-    <form>  
-        <div class="contact-form">   
-            <label>Username : </label>   
-            <input type="text" placeholder="Enter Username" name="username" required>  
-            <label>Password : </label>   
-            <input type="password" placeholder="Enter Password" name="password" required>  
-            <button type="submit">Login</button>   
-            <input type="checkbox" checked="checked"> Remember me   
-            <button type="button" class="cancelbtn"> Cancel</button>   
-            Forgot <a href="#"> password? </a>   
-        </div>   
-    </form> 
-
-
- </section>
- -->
 
 <section id="Contact">
 <div>
@@ -729,17 +637,40 @@ window.requestAnimationFrame(animateMe);
         <div class="shape"></div>
     </div>
     <form>
-        <h3>Welcome Back!
-            <span>Login to your account.</span>
+        <h3>Contact Me !
+            <!-- <span>Login to your account.</span> -->
         </h3>
 
-        <label for="username">Username</label>
-        <input type="text" placeholder="For ex. CodingArtist" id="username">
+        <label for="username">Your Name</label>
+        <input type="text" placeholder="" id="username">
 
-        <label for="password">Password</label>
-        <input type="password" placeholder="Minimum 6 characters" id="password">
+        <label for="password">Email</label>
+        <input type="email" placeholder="" id="password">
 
-        <button>Sign In</button>
+        <label for="username">Needed Service</label>
+        <select class="custom-select valid" id="budget" id="password" name="budget" aria-invalid="false">
+<option selected="">Choose...</option>
+<option value="$1000 below">&lt; Full Stack Website</option>
+<option value="$2,000 - $5,000">Front End Website</option>
+<option value="$5,000 - $15,000">Graphic Design</option>
+<option value="$15,000 - $25,000">Brand Logo</option>
+<option value="$25,000 >">Script Writing &gt;</option>
+</select>
+
+        <label for="password">Budget</label>
+        <select class="custom-select valid" id="budget" name="budget" aria-invalid="false">
+<option selected="">Choose...</option>
+<option value="$1000 below">&lt; $1,000</option>
+<option value="$2,000 - $5,000">$2,000 - $5,000</option>
+<option value="$5,000 - $15,000">$5,000 - $15,000</option>
+<option value="$15,000 - $25,000">$15,000 - $25,000</option>
+<option value="$25,000 >">$25,000 &gt;</option>
+</select>
+
+        <label for="username">Message</label>
+        <input type="text" placeholder="" id="username">
+
+        <button>Send</button>
     </form>
 </div>
     <div class="being">
@@ -747,13 +678,22 @@ window.requestAnimationFrame(animateMe);
     <div class="left-contact"></div>
     <div class="right-contact">
         <p>If you want to collaborate on crafting amazing experience for people – you are very welcome to contact me.</p>
-        <p>I am available for freelance projects and full-time internships.</p>
+        <p>I am available for freelance projects and part-time internships.</p>
         <p>Sanket Dhuri</p>
         <p>Developer and Freelancer</p>
         <a href="mailto:contact.sanketdhuri@gmail.com">contact.sanketdhuri@gmail.com</a>
         
     </div>
 
+    </div>
+
+    <div class="only-ad-contact">
+        <p>If you want to collaborate on crafting amazing experience for people – you are very welcome to contact me.</p>
+        <p>I am available for freelance projects and full-time internships.</p>
+        <p>Sanket Dhuri</p>
+        <p>Developer and Freelancer</p>
+        <a href="mailto:contact.sanketdhuri@gmail.com">contact.sanketdhuri@gmail.com</a>
+        
     </div>
 
 </section>
