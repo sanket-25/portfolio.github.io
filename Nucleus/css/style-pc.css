@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ruslan+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rammetto+One&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 
 
 
@@ -41,10 +41,34 @@ html {
 
 .mememe {
     position: absolute;
-    right: 10em;
+    right: 22em;
     bottom: 0em;
 
 }
+
+
+#polygon{
+    height: 50vw;
+    width: 50vw;
+    position: absolute;
+    border-radius: 50%;
+}
+#polygon:first-child{
+    background: linear-gradient(
+        #9b22ea,
+        #bf23f6
+    );
+    bottom: -3em;
+    right: -4em;
+    filter: blur(1.5em);
+}
+
+
+
+
+
+
+
 
 
 
@@ -114,8 +138,12 @@ html {
     font-size: xx-large;
     top: 11em;
     left: 1.5em;
-    font-family: 'Londrina Outline', cursive;
-    font-family: 'Bungee Outline', cursive;
+    font-family: 'Abril Fatface', cursive;
+    background-color: linear-gradient(
+        to right,
+        #ff512f,
+        #f09819
+    );
 }
 
 

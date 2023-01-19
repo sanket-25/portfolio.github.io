@@ -34,7 +34,7 @@
 <section id="Home">
 
 <div>
-
+<div id="polygon"></div>
 
 
 	<!-- <nav class="nav-ad">
@@ -115,6 +115,11 @@ i.toggler {
 .dark-mode {
     background-color: red;
     color: pink;
+    background: linear-gradient(
+        to right,
+        #ff512f,
+        #f09819
+    ) !important;
 }
 
 .dark-mode i.toggler {
@@ -134,17 +139,17 @@ i.toggler {
 
 <script type="text/javascript">
 	function myFunction() {
-    var element = document.body;
+    var element = document.getElementById('polygon');
     element.classList.toggle("dark-mode");
 }
 
-var app = document.getElementsByTagName("BODY")[0];
+var app = document.getElementById("polygon")[0];
 if (localStorage.lightMode == "dark") {
     app.setAttribute("data-light-mode", "dark");
 }
 
 function toggle_light_mode() {
-    var app = document.getElementsByTagName("BODY")[0];
+    var app = document.getElementById("polygon")[0];
     if (localStorage.lightMode == "dark") 
     {
     localStorage.lightMode = "light";
@@ -159,7 +164,7 @@ function toggle_light_mode() {
 }
 
 document.getElementById('dark-mode-btn').addEventListener('click', function (e) {
-    const toggler = document.body;
+    const toggler = document.getElementById('polygon');
     toggler.classList.toggle('dark-mode');
     const target = e.target;
     target.classList.toggle('fa-moon');
@@ -535,6 +540,7 @@ window.requestAnimationFrame(animateMe);
 
 <div class="work-boxes">
 	<center><div class="work-box"><a href="https://sanket-25.github.io/prism.github.io" target="_blank"><img src="./Nucleus/images/p1.png"></a></div></center>
+  <center><div class="work-box"><a href="https://sanket-25.github.io/mathletics.github.io" target="_blank"><img src="./Nucleus/images/p6.png"></a></div></center>
 	<center><div class="work-box"><a href="https://sanket-25.github.io/benxene.github.io/" target="_blank"><img src="./Nucleus/images/p2.png"></a></div></center>
 	<center><div class="work-box"><a href="https://sanket-25.github.io/aliensociety.github.io/" target="_blank"><img src="./Nucleus/images/p3.png"></a></div></center>
 	<center><div class="work-box"><a href="https://sanket-25.github.io/lofi-space.github.io/" target="_blank"><img src="./Nucleus/images/p4.png"></a></div></center>
