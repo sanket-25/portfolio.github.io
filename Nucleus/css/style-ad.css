@@ -15,14 +15,14 @@
 
 
 body {
-    max-width: 100%;
-    overflow-x: hidden;
+    /*max-width: 100%;
+    overflow-x: hidden;*/
 }
 
 html {
     background-color: black;
-    max-width: 100%;
-    overflow-x: hidden;
+    /*max-width: 100%;
+    overflow-x: hidden;*/
 }
 
 #view {
@@ -54,17 +54,25 @@ html {
 
 .mememe {
     position: absolute;
-    right: 10em;
+/*    right: 10em;*/
     bottom: 0em;
+    left: -2em;
 
 }
 
+.grandparent {
+    position: relative;
+}
 
+.parent {
+    overflow: hidden;
+    height: 100vh;
+}
 
 #polygon{
     height: 100vw;
     width: 100vw;
-    position: absolute;
+    position: relative;
     border-radius: 50%;
 }
 #polygon:first-child{
@@ -72,10 +80,54 @@ html {
         #9b22ea,
         #bf23f6
     );
-    bottom: -3em;
+    bottom: -31em;
     right: -4em;
     filter: blur(1.5em);
 }
+
+#polygon {
+    /*position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 120px;
+    height: 120px;
+    margin:-60px 0 0 -60px;*/
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+
+@-moz-keyframes spin { 
+    100% { -moz-transform: rotate(360deg); } 
+}
+@-webkit-keyframes spin { 
+    100% { -webkit-transform: rotate(360deg); } 
+}
+@keyframes spin { 
+    100% { 
+        -webkit-transform: rotate(360deg); 
+        transform:rotate(360deg); 
+    } 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -124,7 +176,7 @@ html {
 
 
 .nav-hall a:hover {
-    color: red;
+    color: white;
 
 }
 
@@ -180,7 +232,7 @@ html {
     text-align: center;
     display: flex;
     position: sticky;
-    font-size: 8vw;
+    font-size: 13vw;
     top: 42%;
     font-family: 'Londrina Outline', cursive;
     font-family: 'Ruslan Display', cursive;
@@ -426,7 +478,7 @@ a{
 
 
 .background{
-    width: 430px;
+/*    width: 430px;*/
     height: 520px;
     position: absolute;
 /*    transform: translate(-50%,-50%);*/
@@ -453,7 +505,8 @@ a{
         #ff512f,
         #f09819
     );
-    right: -30px;
+/*    right: -30px;*/
+    left: 39vw;
     bottom: -80px;
 }
 form{
@@ -505,6 +558,20 @@ input{
     font-size: 14px;
     font-weight: 300;
 }
+
+select {
+     display: block;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(255,255,255,0.07);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+
 ::placeholder{
     color: #e5e5e5;
 }
