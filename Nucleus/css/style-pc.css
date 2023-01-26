@@ -69,7 +69,7 @@ html {
         #bf23f6
     );
     bottom: -3em;
-    right: -4em;
+    right: -8em;
     filter: blur(1.5em);
 }
 
@@ -162,7 +162,7 @@ html {
     color: #ffc107;
     padding: 0.2em;
     font-size: large;
-    
+    cursor: pointer;
     
 
 
@@ -614,12 +614,23 @@ button{
     padding: 1vw;
 }
 
+.right-contact ul {
+    color: white;
+    font-size: 1.5vw;
+    padding: 1vw;
+
+}
+
 .only-ad-contact {
     display: none;
 }
 
-
-
+.social-c {
+    display: inline;
+    text-decoration: none;
+    list-style-type: none;
+    margin-right: 1vw;
+}
 
 
 
@@ -658,7 +669,7 @@ button{
   left: 0;
   right: 0;
   border-radius: 30px;
-  box-shadow: 0 0 0 2px #777, 0 0 4px #777;
+  box-shadow: 0 0 0 2px #673ab7, 0 0 4px #673ab7;
   cursor: pointer;
   border: 4px solid transparent;
   overflow: hidden;
@@ -671,7 +682,7 @@ button{
   content: "";
   width: 100%;
   height: 100%;
-  background-color: #777;
+  background-color: #673ab7;
   border-radius: 30px;
   transform: translateX(-30px); /*translateX(-(w-h))*/
   transition: 0.2s;
@@ -680,7 +691,7 @@ button{
 input:checked + .slider:before 
 {
   transform: translateX(30px); /*translateX(w-h)*/
-  background-color: limeGreen;
+  background-color: #ff9800;
 }
 
 input:checked + .whiter:before 
@@ -691,5 +702,5 @@ input:checked + .whiter:before
 
 input:checked + .slider 
 {
-  box-shadow: 0 0 0 2px limeGreen, 0 0 8px limeGreen;
+  box-shadow: 0 0 0 2px #ff9800, 0 0 8px #ff9800;
 }

@@ -4,7 +4,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Ruslan+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rammetto+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unbounded&display=swap');
 
 
 
@@ -26,7 +27,12 @@ html {
 }
 
 #view {
-    display: none;
+/*    display: none;*/
+position: relative !important;
+height: 100vh !important;
+top: -30vh !important;
+width: 32.3vh !important;
+margin: 0px !important;
 }
 
 
@@ -66,6 +72,9 @@ html {
 
 .parent {
     overflow: hidden;
+}
+
+.poly-parent {
     height: 100vh;
 }
 
@@ -189,6 +198,7 @@ html {
     top: 3em;
     left: 1em;
     font-family: 'Bungee Spice', cursive;
+    display: none;
 }
 
 .d-f {
@@ -203,6 +213,7 @@ html {
         #ff512f,
         #f09819
     );
+    display: none;
 }
 
 
@@ -391,12 +402,17 @@ a{
 
 
 .services-h {
-    font-family: sans-serif;
     color: white;
     font-size: 10vw;
     left: 0em;
     top: 35vw;
-    position: relative;
+    position: absolute;
+    z-index: 1;
+    color: darkred;
+    font-family: 'Alfa Slab One', cursive;
+    display: flex;
+    justify-content: center;
+
 
 
 
@@ -405,7 +421,7 @@ a{
 
 .ser {
     background-color: #5d38e9;
-    
+    height: 85vh;
     display: flex;
 }
 
@@ -419,7 +435,7 @@ a{
 
 .left-services {
 
-    width: 40%;
+    width: 30%;
     
 
 }
@@ -428,17 +444,19 @@ a{
 
 .left-services h3 {
     color: #ffc107;
-
     display: flex;
-
-    font-size: 3vw;
-
+    font-size: 4vw;
+    width: 200%;
+    position: relative;
+    z-index: 2;
     font-family: 'Londrina Outline', cursive;
-/*    font-family: 'Ruslan Display', cursive;
-    font-family: 'Rammetto One', cursive;*/
+    font-family: 'Unbounded', cursive;
 
 }
 
+.right-services {
+    position: relative;
+}
 
 
 
@@ -457,7 +475,7 @@ a{
 .work-box img{
     width: 90%;
     border-radius: 4em;
-    padding: 2em;
+    margin-top: 2em;
 }
 
 
@@ -616,9 +634,12 @@ button{
     padding: 1vw;
 }
 
+
+
 .only-ad-contact {
     color: white;
     margin-top: 15vw;
+    height: 75vh;
 
 }
 
@@ -632,7 +653,19 @@ button{
     padding: 5vw;
 }
 
+.only-ad-contact ul {
+    color: white;
+    font-size: 1.5vw;
+    padding: 4vw;
 
+}
+
+.social-c {
+    display: inline;
+    text-decoration: none;
+    list-style-type: none;
+    margin-right: 3vw;
+}
 
 
 
@@ -678,7 +711,7 @@ button{
   left: 0;
   right: 0;
   border-radius: 30px;
-  box-shadow: 0 0 0 2px #777, 0 0 4px #777;
+  box-shadow: 0 0 0 2px #673ab7, 0 0 4px #673ab7;
   cursor: pointer;
   border: 4px solid transparent;
   overflow: hidden;
@@ -691,7 +724,7 @@ button{
   content: "";
   width: 100%;
   height: 100%;
-  background-color: #777;
+  background-color: #673ab7;
   border-radius: 30px;
   transform: translateX(-30px); /*translateX(-(w-h))*/
   transition: 0.2s;
@@ -700,7 +733,7 @@ button{
 input:checked + .slider:before 
 {
   transform: translateX(30px); /*translateX(w-h)*/
-  background-color: limeGreen;
+  background-color: #ff9800;
 }
 
 input:checked + .whiter:before 
@@ -711,5 +744,5 @@ input:checked + .whiter:before
 
 input:checked + .slider 
 {
-  box-shadow: 0 0 0 2px limeGreen, 0 0 8px limeGreen;
+  box-shadow: 0 0 0 2px #ff9800, 0 0 8px #ff9800;
 }
