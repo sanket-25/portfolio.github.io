@@ -6,8 +6,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Unbounded&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Yatra+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kumar+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Koh+Santepheap:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
 
 
 
@@ -177,6 +181,7 @@ margin: 0px !important;
     color: #ffc107;
     padding: 0.1em;
     font-size: large;
+    font-family: 'Cinzel Decorative', cursive;
     
     
 
@@ -245,9 +250,9 @@ margin: 0px !important;
     position: sticky;
     font-size: 13vw;
     top: 42%;
-    font-family: 'Londrina Outline', cursive;
-    font-family: 'Ruslan Display', cursive;
-    font-family: 'Rammetto One', cursive;
+    font-family: 'Rubik Glitch', cursive;
+    font-family: 'Yeseva One', cursive;
+    letter-spacing: 0.2vw;
     align-content: center;
     justify-content: center;
 }
@@ -278,14 +283,18 @@ margin: 0px !important;
 .hey p {
     color: black;
     font-size: x-large;
+    font-family: 'Yatra One', cursive;
+
 }
 
 .hey-work .w1 {
     font-size: x-large;
+    font-family: 'Kumar One', cursive;
 }
 
 .hey-work .w2 {
     font-size: large;
+    font-family: 'Koh Santepheap', cursive;
 
 }
 

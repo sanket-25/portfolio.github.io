@@ -4,12 +4,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Ruslan+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rammetto+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
-
-
-
-
-
-
+@import url('https://fonts.googleapis.com/css2?family=Yatra+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kumar+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Koh+Santepheap:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
 
 
 
@@ -43,6 +43,7 @@ html {
     position: absolute;
     right: 22em;
     bottom: 0em;
+    z-index: 5;
 
 }
 
@@ -101,8 +102,35 @@ html {
 }
 
 
+#push {
+    /*position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 120px;
+    height: 120px;
+    margin:-60px 0 0 -60px;*/
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
 
+@-moz-keyframes spin { 
+    100% { -moz-transform: rotate(360deg); } 
+}
+@-webkit-keyframes spin { 
+    100% { -webkit-transform: rotate(360deg); } 
+}
+@keyframes spin { 
+    100% { 
+        -webkit-transform: rotate(360deg); 
+        transform:rotate(360deg); 
+    } 
+}
 
+#push {
+    position: absolute;
+    top: 0em;
+}
 
 
 
@@ -163,6 +191,7 @@ html {
     padding: 0.2em;
     font-size: large;
     cursor: pointer;
+    font-family: 'Cinzel Decorative', cursive;
     
 
 
@@ -179,8 +208,8 @@ html {
 .sanket-h1-0 {
     position: absolute;
     z-index: 3;
-    font-size: xxx-large;
-    top: 6em;
+    font-size: 4vw;
+    top: 7em;
     left: 1em;
     font-family: 'Bungee Spice', cursive;
 }
@@ -188,7 +217,7 @@ html {
 .d-f {
     position: absolute;
     z-index: 3;
-    font-size: xx-large;
+    font-size: 3vw;
     top: 11em;
     left: 1.5em;
     font-family: 'Abril Fatface', cursive;
@@ -231,9 +260,9 @@ html {
     position: sticky;
     font-size: 8vw;
     top: 42%;
-    font-family: 'Londrina Outline', cursive;
-    font-family: 'Ruslan Display', cursive;
-    font-family: 'Rammetto One', cursive;
+    font-family: 'Rubik Glitch', cursive;
+    font-family: 'Yeseva One', cursive;
+    letter-spacing: 0.2vw;
     align-content: center;
     justify-content: center;
 }
@@ -269,14 +298,18 @@ html {
 .hey p {
     color: black;
     font-size: x-large;
+    font-family: 'Yatra One', cursive;
 }
 
 .hey-work .w1 {
     font-size: x-large;
+    font-family: 'Kumar One', cursive;
+
 }
 
 .hey-work .w2 {
     font-size: large;
+    font-family: 'Koh Santepheap', cursive;
 
 }
 
@@ -399,6 +432,8 @@ a{
     left: 0em;
     top: 35vw;
     position: relative;
+    font-family: 'Alfa Slab One', cursive;
+    color: darkred;
 
 
 
@@ -497,7 +532,7 @@ a{
         #9b22ea,
         #bf23f6
     );
-    left: -80px;
+    left: -148px;
     top: -80px;
 }
 .shape:last-child{
@@ -510,13 +545,13 @@ a{
     bottom: -80px;
 }
 form{
-    height: 600px;
+    height: 100%;
     width: 430px;
     background-color: rgba(255,255,255,0.07);
     position: absolute;
     transform: translate(-50%,-50%);
     top: 40vw;
-    left: 30%;
+    left: 26%;
     border-radius: 10px;
     backdrop-filter: blur(10px);
     border: 2px solid rgba(255,255,255,0.1);
@@ -632,7 +667,9 @@ button{
     margin-right: 1vw;
 }
 
-
+.social-c img {
+    width: 4em;
+}
 
 
 
