@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -168,13 +168,16 @@ i.toggler {
 
 .dark-mode {
     background-color: red;
-    color: #673ab7;
+    color: #673ab7 !important;
+    color: white !important;
     background: linear-gradient(
         to right,
         #ff512f,
         #f09819
     ) !important;
-}
+
+    background:linear-gradient( to right, #ffbd00, #ff5200 ) !important;
+  }
 
 .dark-mode i.toggler {
     color: orange;
@@ -194,31 +197,33 @@ i.toggler {
 <script type="text/javascript">
   function myFunction() {
     var element = document.getElementById('polygon');
+
     element.classList.toggle("dark-mode");
 }
 
-var app = document.getElementById("polygon")[0];
-if (localStorage.lightMode == "dark") {
-    app.setAttribute("data-light-mode", "dark");
-}
+// var app = document.getElementById("polygon","d-f")[0];
+// if (localStorage.lightMode == "dark") {
+//     app.setAttribute("data-light-mode", "dark");
+// }
 
-function toggle_light_mode() {
-    var app = document.getElementById("polygon")[0];
-    if (localStorage.lightMode == "dark") 
-    {
-    localStorage.lightMode = "light";
-    app.setAttribute("data-light-mode", "light");
-    } 
-    else 
-    {
-    localStorage.lightMode = "dark";
-    app.setAttribute("data-light-mode", "dark");
-    }
-    console.log("lightMode = " + localStorage.lightMode);
-}
+// function toggle_light_mode() {
+//     var app = document.getElementById("polygon","d-f")[0];
+//     if (localStorage.lightMode == "dark") 
+//     {
+//     localStorage.lightMode = "light";
+//     app.setAttribute("data-light-mode", "light");
+//     } 
+//     else 
+//     {
+//     localStorage.lightMode = "dark";
+//     app.setAttribute("data-light-mode", "dark");
+//     }
+//     console.log("lightMode = " + localStorage.lightMode);
+// }
 
 document.getElementById('dark-mode-btn').addEventListener('click', function (e) {
     const toggler = document.getElementById('polygon');
+
     toggler.classList.toggle('dark-mode');
     const target = e.target;
     target.classList.toggle('fa-moon');
@@ -252,7 +257,7 @@ document.getElementById('dark-mode-btn').addEventListener('click', function (e) 
 	</div>
 
 	<div>
-		<h1 class="d-f">Developer & Freelancer</h1>
+		<h1 id="d-f">Developer & Freelancer</h1>
 	</div>
 
 
@@ -328,6 +333,7 @@ document.getElementById('dark-mode-btn').addEventListener('click', function (e) 
 			<p>HEY, I'm Sanket Dhuri.</p>
 			<p>I am a Developer and a Graphic Designer based in Mumbai, India. I code and design beautifully simple things to create an engaging digital experience.</p>
 			<p>Aiming to bring Imagination into Virtual Reality.</p>
+      <!-- <p>Speaking about my educational background, currently I'm pursuing AI Engineering.</p> -->
 			    </div><br><br>
 
 
@@ -508,7 +514,7 @@ window.requestAnimationFrame(animateMe);
 </div>
 
 <div class="ser">
-
+<div class="ser-only-ad"><center>SERVICES</center></div>
 
 	<div class="left-services">
 	<h3>1. Web Development</h3>
@@ -762,9 +768,10 @@ window.requestAnimationFrame(animateMe);
     <div class="only-ad-contact">
         <p>If you want to collaborate on crafting amazing experience for people – you are very welcome to contact me.</p>
         <p>I am available for freelance projects and full-time internships.</p>
-        <p>Sanket Dhuri</p>
-        <p>Developer and Freelancer</p>
-        <a href="mailto:contact.sanketdhuri@gmail.com">contact.sanketdhuri@gmail.com</a>
+        <br><br>
+        <p style="font-family: 'Uncial Antiqua', cursive;">Sanket Dhuri</p>
+        <p style="font-family: 'Cinzel Decorative', cursive;">Developer and Freelancer</p>
+        <a href="mailto:contact.sanketdhuri@gmail.com" style="font-family: 'Big Shoulders Inline Text', cursive; letter-spacing: 0.3vw;">contact.sanketdhuri@gmail.com</a>
 
         <ul class="social-p">
           <li class="social-c"><img src="./Nucleus/images/social1.png"></li>

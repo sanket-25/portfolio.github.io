@@ -9,10 +9,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Yatra+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kumar+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Koh+Santepheap:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Koh+Santepheap:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
 
 
 
@@ -37,6 +37,7 @@ height: 100vh !important;
 top: -30vh !important;
 width: 32.3vh !important;
 margin: 0px !important;
+display: none;
 }
 
 
@@ -62,7 +63,7 @@ margin: 0px !important;
 /*    margin-left: 4em;*/
 }
 
-.mememe {
+.mememe img {
     position: absolute;
 /*    right: 10em;*/
     bottom: 0em;
@@ -79,7 +80,7 @@ margin: 0px !important;
 }
 
 .poly-parent {
-    height: 100vh;
+    height: 92vh;
 }
 
 #polygon{
@@ -93,7 +94,8 @@ margin: 0px !important;
         #9b22ea,
         #bf23f6
     );
-    bottom: -31em;
+    background: linear-gradient(#9b22ea, #e9429f);
+    bottom: -25em;
     right: -4em;
     filter: blur(1.5em);
 }
@@ -180,7 +182,8 @@ margin: 0px !important;
     list-style-type: none;
     color: #ffc107;
     padding: 0.1em;
-    font-size: large;
+    font-size: 3.8vw;
+    font-weight: bold;
     font-family: 'Cinzel Decorative', cursive;
     
     
@@ -206,7 +209,7 @@ margin: 0px !important;
     display: none;
 }
 
-.d-f {
+#d-f {
     position: absolute;
     z-index: 3;
     font-size: xx-large;
@@ -409,6 +412,16 @@ a{
   color: #728E93;
 }
 
+.ser-only-ad {
+    background-color: darkred;
+    color: #5d38e9;
+    font-size: 10vw;
+    font-family: 'Bungee', cursive;
+}
+
+.right-services{
+    position: relative;
+}
 
 .services-h {
     color: white;
@@ -421,6 +434,8 @@ a{
     font-family: 'Alfa Slab One', cursive;
     display: flex;
     justify-content: center;
+    position: sticky;
+    display: none;
 
 
 
@@ -430,8 +445,8 @@ a{
 
 .ser {
     background-color: #5d38e9;
-    height: 85vh;
-    display: flex;
+    height: 100vh;
+    
 }
 
 
@@ -483,7 +498,7 @@ a{
 
 .work-box img{
     width: 90%;
-    border-radius: 4em;
+    border-radius: 2em;
     margin-top: 2em;
 }
 

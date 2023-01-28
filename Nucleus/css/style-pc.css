@@ -39,7 +39,7 @@ html {
     margin-left: 4em;
 }
 
-.mememe {
+.mememe img {
     position: absolute;
     right: 22em;
     bottom: 0em;
@@ -69,6 +69,7 @@ html {
         #9b22ea,
         #bf23f6
     );
+    background: linear-gradient(#9b22ea, #e9429f);
     bottom: -3em;
     right: -8em;
     filter: blur(1.5em);
@@ -192,6 +193,7 @@ html {
     font-size: large;
     cursor: pointer;
     font-family: 'Cinzel Decorative', cursive;
+    font-weight: bold;
     
 
 
@@ -214,18 +216,13 @@ html {
     font-family: 'Bungee Spice', cursive;
 }
 
-.d-f {
+#d-f {
     position: absolute;
     z-index: 3;
     font-size: 3vw;
     top: 11em;
     left: 1.5em;
     font-family: 'Abril Fatface', cursive;
-    background-color: linear-gradient(
-        to right,
-        #ff512f,
-        #f09819
-    );
 }
 
 
@@ -425,6 +422,14 @@ a{
 }
 
 
+.ser-only-ad {
+    display: none;
+}
+
+.right-services {
+    position: relative;
+}
+
 .services-h {
     font-family: sans-serif;
     color: white;
@@ -434,6 +439,7 @@ a{
     position: relative;
     font-family: 'Alfa Slab One', cursive;
     color: darkred;
+
 
 
 
