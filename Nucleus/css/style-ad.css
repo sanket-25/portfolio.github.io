@@ -414,7 +414,7 @@ a{
 
 .ser-only-ad {
     background-color: darkred;
-    color: #5d38e9;
+    color: #ffc107;
     font-size: 10vw;
     font-family: 'Bungee', cursive;
 }
@@ -445,7 +445,7 @@ a{
 
 .ser {
     background-color: #5d38e9;
-    height: 100vh;
+    height: 120vh;
     
 }
 
