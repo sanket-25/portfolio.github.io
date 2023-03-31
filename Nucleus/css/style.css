@@ -6,14 +6,19 @@
 /*COLOR SCHEME*/
 
 * {}
+#box div div {
+	background-color: red;
+}
 
-
+#box div img {
+	width: 700px;
+}
 
 #box div
 {
 position: absolute;
-height: 500px;
-width: 500px;
+height: 700px;
+width: 700px;
 /*border: 1px solid lightgrey;*/
 background: rgba(255,200,100,0.8);
 text-align: center;
@@ -28,32 +33,32 @@ font-size: 200px;
 -webkit-animation-duration: 9s;
 margin:50;
 -webkit-transform-style: preserve-3d;
--webkit-transform-origin: 250px 250px 0;
+-webkit-transform-origin: 350px 350px 0;
 }
 
 #box .one
 { 
--webkit-transform: translateZ(250px);
+-webkit-transform: translateZ(350px);
 }
 #box .two
 { 
--webkit-transform: rotateX(-90deg) translateZ(250px);
+-webkit-transform: rotateX(-90deg) translateZ(350px);
 }
 #box .three 
 {
--webkit-transform: rotateY(90deg) rotateX(90deg) translateZ(250px);
+-webkit-transform: rotateY(90deg) rotateX(90deg) translateZ(350px);
 }
 #box .four 
 {
--webkit-transform: rotateY(180deg) rotateZ(90deg) translateZ(250px);
+-webkit-transform: rotateY(180deg) rotateZ(90deg) translateZ(350px);
 }
 #box .five
 { 
--webkit-transform: rotateY(-90deg) rotateZ(90deg) translateZ(250px);
+-webkit-transform: rotateY(-90deg) rotateZ(90deg) translateZ(350px);
 }
 #box .six 
 {
--webkit-transform: rotateY(90deg) translateZ(250px);
+-webkit-transform: rotateY(90deg) translateZ(350px);
 }
 
 @-webkit-keyframes animation
@@ -65,13 +70,6 @@ from,to{}
 66% { -webkit-transform: rotateY(135deg) rotateX(135deg);}
 83% { -webkit-transform: rotateX(135deg);}
 }
-
-
-
-
-
-
-
 
 
 
