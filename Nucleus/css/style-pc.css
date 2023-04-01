@@ -23,6 +23,8 @@ html {
 
 #Home {
     background-color: black;
+    background: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png),linear-gradient(119.42deg,#cc00c4 8.94%,#7d2ae8 54.02%,#00c4cc 95.49%);
+    image-rendering: pixelated;
     /*color: darkred;*/
     background-color: #673ab7;
     background-color: white;
@@ -723,7 +725,7 @@ form button{
 }
 
 .right-contact a {
-    color: red;
+    color: aqua;
     font-size: 1.5vw;
     padding: 1vw;
 }
