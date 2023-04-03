@@ -16,10 +16,14 @@
 
 
   --coloro-aa: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png), darkred;
+
+
+  --coloro-aaa: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png),linear-gradient(119.42deg,#ed380b 8.94%,#e97b0a 54.02%,#ffc107 95.49%);
+  --coloro-aab: #5d07ad;
 }
 
 .dark-theme{
-  --coloro-a: floralwhite !important;
+  --coloro-a: gold !important;
   --coloro-b: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png),linear-gradient(119.42deg,black 8.94%,black 54.02%,black 95.49%);
   --coloro-c: white !important;
   --coloro-d: linear-gradient(119.42deg,#cc00c4 8.94%,#7d2ae8 54.02%,#00c4cc 95.49%);
@@ -29,13 +33,36 @@
 
 
   --coloro-aa: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png), black;
+
+
+  --coloro-aaa: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png), black;
+  --coloro-aab: gold;
 }
 
 
 
 
 
+/*Custom scrollbar*/
+::-webkit-scrollbar {
+  width: 10px;
+  height: 60px;
+}
 
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: darkred;
+  border-radius: 10px;
+  border: 3px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: red;
+}
 
 
 

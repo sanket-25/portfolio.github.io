@@ -27,7 +27,7 @@ svg {
 	/*fill: black;*/
 	fill-opacity: 0.5;
 	stroke: darkgreen;
-	stroke: #5d07ad;
+	stroke: var(--coloro-aab);
 	stroke-width: 8px;
 }
 .label{

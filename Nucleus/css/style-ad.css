@@ -314,7 +314,7 @@ display: none;
     justify-content: center;
 }
 
-.about-img {
+#about-img {
     display: flex;
     position: sticky;
     top: 42%;
@@ -476,7 +476,7 @@ a{
 
 #Services {
   background-color: #ffc107;
-      background: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png),linear-gradient(119.42deg,#ffc107 8.94%,#e97b0a 54.02%,#ed380b 95.49%);
+  background: var(--coloro-aaa);
   overflow-x: hidden;
 
 }
@@ -496,6 +496,43 @@ a{
   font-weight: 900;
 
 }
+
+.services-main {
+  margin-top: 10vh;
+}
+
+.services-section {
+  display: flex;
+  text-align: center !important;
+  justify-content: center;
+  height: 100vh;
+  padding: 2vw;
+
+}
+
+.services-section div {
+  width: 60%;
+  padding: 2vw;
+
+}
+
+.services-section div h2 {
+  font-size: 3vw;
+  padding-bottom: 5vh;
+  color: #673ab7;
+  font-weight: 600;
+
+}
+
+.services-section div p {
+  font-size: 1.5vw;
+
+}
+.services-section img {
+  width: 40%;
+  height: 40%;  
+}
+
 
 
 .ser-only-ad {

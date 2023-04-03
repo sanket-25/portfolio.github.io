@@ -283,8 +283,16 @@ html {
   color: white;
   padding: 1vh 2vw;
   text-shadow: 0 20px 40px rgba(0,0,0,.5);
+  text-decoration: none;
 
 
+
+
+}
+
+.home-button button a {
+  color: white;
+  text-decoration: none;
 
 }
 
@@ -330,7 +338,7 @@ html {
     justify-content: center;
 }
 
-.about-img {
+#about-img {
     display: flex;
     position: fixed;
     left: 50%;
@@ -514,7 +522,7 @@ a{
 #Services {
   overflow-x: hidden;
   background-color: #ffc107;
-  background: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png),linear-gradient(119.42deg,#ed380b 8.94%,#e97b0a 54.02%,#ffc107 95.49%);
+  background: var(--coloro-aaa);
   z-index: 500;
   position: relative;
 
@@ -562,12 +570,15 @@ a{
 
 .services-section div h2 {
   font-size: 3vw;
-  padding-bottom: 2vh;
+  padding-bottom: 5vh;
+  color: #673ab7;
+  font-weight: 600;
 
 }
 
 .services-section div p {
   font-size: 1.5vw;
+  color: white;
 
 }
 .services-section img {
@@ -670,7 +681,7 @@ a{
 #Work {
   position: relative;
   z-index: 500;
-  background: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png);
+  /*background: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png);*/
 
 }
 
@@ -680,7 +691,7 @@ a{
 
 .work-boxes {
     background-color: black;
-    background: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png);
+    /*background: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png);*/
 
 }
 
@@ -707,7 +718,7 @@ a{
 #Contact {
     position: relative;
     z-index: 500;
-    background: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png);
+    /*background: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png);*/
 
 
 }
@@ -867,6 +878,8 @@ form button{
     text-decoration: none;
     list-style-type: none;
     margin-right: 1vw;
+    position: relative;
+    z-index: 700;
 }
 
 .social-c img {
