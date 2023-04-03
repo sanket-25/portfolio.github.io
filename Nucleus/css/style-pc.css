@@ -22,8 +22,7 @@ html {
 }
 
 #Home {
-    background-color: black;
-    background: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png),linear-gradient(119.42deg,#cc00c4 8.94%,#7d2ae8 54.02%,#00c4cc 95.49%);
+    background: var(--coloro-b);
     image-rendering: pixelated;
     /*color: darkred;*/
     background-color: #673ab7;
@@ -31,6 +30,8 @@ html {
     /*color: #ffc107;*/
     height: 100vh;
     overflow: hidden;
+    position: relative;
+    z-index: 500;
 }
 
 
@@ -48,6 +49,7 @@ html {
     right: 5vw;
     bottom: 0em;
     z-index: 5;
+    width: 16vw;
 
 }
 
@@ -71,11 +73,13 @@ html {
     border-radius: 50%;
 }
 #polygon:first-child{
-    background: linear-gradient(
+    /*background: linear-gradient(
         #9b22ea,
         #bf23f6
     );
-    background: linear-gradient(#9b22ea, #db2d1b);
+    background: linear-gradient(#9b22ea, #db2d1b);*/
+    background: var(--coloro-d);
+
     bottom: -10vh;
     left: -20vw;
     /*filter: blur(1.5em);*/
@@ -209,7 +213,7 @@ html {
     text-decoration: none;
     list-style-type: none;
     color: #ffc107;
-    color: black;
+    color: var(--coloro-c);
     padding: 0.2em;
     font-size: large;
     cursor: pointer;
@@ -260,6 +264,7 @@ html {
 #d-f span {
   font-family: 'Playfair Display', serif;
   color: #4808ab;
+  color: white;
 }
 
 .home-button {
@@ -283,18 +288,22 @@ html {
 
 }
 
+.home-button button:focus {
+  background-color: pink !important;
+}
 
 
 #About {
-    background-color: red;
+    /*background-color: red;*/
     display: flex;
     position: relative;
     z-index: 100;
 }
 
 #About .left-about {
-    background-color: darkred;
     width: 50%;
+    background: var(--coloro-aa);
+
     
 
 }
@@ -309,9 +318,10 @@ html {
     color: #ffc107;
     text-align: center;
     display: flex;
-    position: sticky;
+    position: fixed;
     font-size: 8vw;
-    top: 42%;
+    left: 8%;
+    top: 37%;
     font-family: 'Rubik Glitch', cursive;
     font-family: 'Yeseva One', cursive;
     font-family: 'Playfair Display', serif;
@@ -322,9 +332,14 @@ html {
 
 .about-img {
     display: flex;
-    position: sticky;
-    top: 42%;
-    width: 30%;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 12vw;
+    z-index: 1;
 }
 
 
@@ -334,14 +349,29 @@ html {
 #About .right-about {
 /*    position: relative;*/
     width: 50%;
-    background-color: white;
+    background: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png), white;
+
 
 
 }
 
 #About .right-about .text-for-padding {
-    padding: 3em;
+    padding: 7vw;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -441,10 +471,10 @@ a{
 
 /* Aesthetics */
 .top-section{
-  background: linear-gradient(135deg, #f4583a 0%,#cd1e38 100%);
+  background: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png), linear-gradient(135deg, #f4583a 0%,#cd1e38 100%);
 }
 .bottom-section{
-  background: #d4fef2;
+  background: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png), #d4fef2;
 }
 .section h1{
   font-size: 200px;
@@ -476,6 +506,75 @@ a{
 .content-theme-light a{
   color: #728E93;
 }
+
+
+
+
+
+#Services {
+  overflow-x: hidden;
+  background-color: #ffc107;
+  background: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png),linear-gradient(119.42deg,#ed380b 8.94%,#e97b0a 54.02%,#ffc107 95.49%);
+  z-index: 500;
+  position: relative;
+
+}
+
+.services-brand {
+  display: flex;
+  justify-content: center;
+  align-items: center !important;
+  height: 100vh;
+  padding: 2vw;
+
+
+}
+
+.services-brand p {
+  color: darkred;
+  font-size: 10vw;
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  position: relative;
+  left: 50%;
+  transform: translate(-70%, 0);
+
+}
+
+.services-main {
+  margin-top: 10vh;
+}
+
+.services-section {
+  display: flex;
+  text-align: center !important;
+  justify-content: center;
+  height: 100vh;
+  padding: 2vw;
+
+}
+
+.services-section div {
+  width: 60%;
+  padding: 2vw;
+
+}
+
+.services-section div h2 {
+  font-size: 3vw;
+  padding-bottom: 2vh;
+
+}
+
+.services-section div p {
+  font-size: 1.5vw;
+
+}
+.services-section img {
+  width: 40%;
+  height: 40%;  
+}
+
 
 
 .ser-only-ad {
@@ -565,8 +664,24 @@ a{
 
 
 
+
+
+
+#Work {
+  position: relative;
+  z-index: 500;
+  background: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png);
+
+}
+
+
+
+
+
 .work-boxes {
     background-color: black;
+    background: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png);
+
 }
 
 
@@ -581,7 +696,9 @@ a{
 
 
 
-
+.changing-colors {
+  background-color: 
+}
 
 
 
@@ -589,6 +706,10 @@ a{
 
 #Contact {
     position: relative;
+    z-index: 500;
+    background: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png);
+
+
 }
 
 
@@ -788,7 +909,7 @@ form button{
   right: 0;
   border-radius: 30px;
   box-shadow: 0 0 0 2px #673ab7, 0 0 4px #673ab7;
-  box-shadow: 0 0 0 2px black, 0 0 4px black;
+  box-shadow: 0 0 0 2px white, 0 0 4px white;
   cursor: pointer;
   border: 4px solid transparent;
   overflow: hidden;
@@ -801,8 +922,7 @@ form button{
   content: "";
   width: 100%;
   height: 100%;
-  background-color: #673ab7;
-  background-color: black;
+  background-color: white;
   border-radius: 30px;
   transform: translateX(-30px); /*translateX(-(w-h))*/
   transition: 0.2s;
@@ -811,8 +931,8 @@ form button{
 input:checked + .slider:before 
 {
   transform: translateX(30px); /*translateX(w-h)*/
-  background-color: #ff9800;
   background-color: white;
+  background-color: #673ab7;
 }
 
 input:checked + .whiter:before 
@@ -824,6 +944,6 @@ input:checked + .whiter:before
 input:checked + .slider 
 {
   box-shadow: 0 0 0 2px #ff9800, 0 0 8px #ff9800;
-  box-shadow: 0 0 0 2px white, 0 0 8px white;
+  box-shadow: 0 0 0 2px #673ab7, 0 0 8px #673ab7;
 
 }

@@ -6,6 +6,11 @@
 	<title>SANKET DHURI | Developer & Freelancer</title>
 	<link rel="icon" type="image/icon" href="./hex.png">
 
+	<meta property="og:site_name " content="Sanket Dhuri - Web Developer" />
+		<meta property="og:title" content="Sanket Dhuri - Web Developer" />
+		<meta property="og:description" content="I am a Web Developer from India living in Mumbai." />
+		<meta property="og:image" content="./logo1.png" />
+
 
 
     <!-- CSS -->
@@ -17,6 +22,11 @@
   <link rel="stylesheet" type="text/css" href="./Nucleus/css/style-ad.css" media='screen and (min-width: 200px) and (max-width: 800px)'>
 	<link rel="stylesheet" type="text/css" href="./Nucleus/css/style-ad.css" media='screen and (min-width: 0px) and (max-width: 400px)'>
 	<link rel="stylesheet" type="text/css" href="./Nucleus/css/style.css">
+
+
+
+			<link rel="stylesheet" type="text/css" href="./platonic.css">
+
 
 
 
@@ -47,7 +57,26 @@
 
 
 </head>
-<body>
+<body onload="loading()">
+
+
+<!-- <div id="Preloader">
+	<div class="cube">
+  <div class="side"></div>
+  <div class="side"></div>
+  <div class="side"></div>
+  <div class="side"></div>
+  <div class="side"></div>
+  <div class="side"></div>
+    </div>
+</div> -->
+
+<div id="Preloader">
+	
+</div>
+
+
+
 
 <section id="Home">
 
@@ -70,11 +99,10 @@
 
 
 
-
     
 
 	<div class="top">
-	<h1 class="sanket-h1" style="font-family: 'Uncial Antiqua', cursive;">SANKET DHURI</h1>
+	<h1 class="sanket-h1" style="font-family: 'Uncial Antiqua', cursive; color: var(--coloro-a);">SANKET DHURI</h1>
 
 	<nav class="nav-pc">
 		
@@ -131,7 +159,7 @@
 
   <label class="switch">
     <input type="checkbox">
-    <span class="slider" id="dark-mode-btn" class="toggler far fa-moon"></span>
+    <span class="slider" id="spacex" class="toggler far fa-moon"></span>
   </label>
 </div>
 
@@ -143,7 +171,7 @@
 
 .c-moon {
     padding: 25px;
-    background-color: #FFAA80;
+    background-color: #673ab7;
     width: 100%;
     justify-content: center;
     align-items: center;
@@ -165,7 +193,7 @@
 /* CSS styling for Dark-mode and light mode toggle */
 
 i.toggler {
-    color: white;
+    color: #673ab7;
     float: right;
     font-size: 20px;
 }
@@ -173,14 +201,12 @@ i.toggler {
 .dark-mode {
     background-color: red;
     color: #673ab7 !important;
-    color: white !important;
     background: linear-gradient(
         to right,
         #ff512f,
-        #f09819
+        #673ab7
     ) !important;
-
-    background:linear-gradient( to right, #ffbd00, #ff5200 ) !important;
+    background-color: #673ab7;
   }
 
 .dark-mode i.toggler {
@@ -188,7 +214,7 @@ i.toggler {
 }
 
 .dark-mode .c-moon {
-    background-color: white;
+    background-color: #673ab7;
 }
 
 .dark-mode h1, .dark-mode h3, .dark-mode h4 {
@@ -238,6 +264,21 @@ document.getElementById('dark-mode-btn').addEventListener('click', function (e) 
 
 
 
+<script type="text/javascript">
+  
+  var spacex = document.getElementById("spacex");
+
+  spacex.onclick = function(){
+    document.body.classList.toggle("dark-theme");
+  }
+
+</script>
+
+<style>  
+
+
+
+</style>
 
 
 
@@ -263,12 +304,29 @@ document.getElementById('dark-mode-btn').addEventListener('click', function (e) 
 	</div> -->
 
 	<div>
-		<h1 id="d-f">I'm <span>Web Developer</span></h1>
+		<h1 id="d-f">I'm <span class="multi-text"></span></h1>
 	</div>
 
+	<script src="https://unpkg.com/typed.js@2.0.14/dist/typed.umd.js"></script>
+
+	<script type="text/javascript">
+		var typingEffect = new Typed(".multi-text",{
+		strings : ["Web Developer","Graphic Designer","Hardware Technician","UI/UX Designer","Athlete"],
+		loop : true,
+		typeSpeed : 100,
+		backSpeed : 80,
+		startDelay : 1000,
+		backDelay : 1500
+
+	})
+
+	</script>
+
+
+
 	<div class="home-button">
-		<button>Resume</button>
-		<button>Contact Me</button>
+		<button><a href="#Contact">Contact Me</a></button>
+		<button><a href="https://sanket-25.github.io/resume.github.io">Resume</a></button>
 	</div>
 
 </div>
@@ -356,16 +414,17 @@ document.getElementById('dark-mode-btn').addEventListener('click', function (e) 
 
 
  <section id="About">
+ 				<img src="./Me.png" class="about-img">
+
  		<div class="left-about scrolling">
 			<h2 about-h>ABOUT</h2>
-			<!-- <img src="./Me.png" class="about-img"> -->
  		</div>
 
  		<div class="right-about">
  			<div class="text-for-padding">
  				<div class="hey w">
 			<p>HEY, I'm Sanket Dhuri.</p>
-			<p>I am a Developer and a Graphic Designer based in Mumbai, India. I code and design beautifully simple things to create an engaging digital experience.</p>
+			<p>I am a Full-Stack Developer and a Graphic Designer based in Mumbai, India. I code and design beautifully simple things to create an engaging digital experience.</p>
 			<p>Aiming to bring Imagination into Virtual Reality.</p>
       <!-- <p>Speaking about my educational background, currently I'm pursuing AI Engineering.</p> -->
 			    </div><br><br>
@@ -384,54 +443,58 @@ document.getElementById('dark-mode-btn').addEventListener('click', function (e) 
 			<p class="w3 w">I build sites with amazing looks and fast load-times that do one thing: Get You Results. Whatever you have in mind, you should know - I build with a goal-oriented eye for precision. When we're done, you will have a site that gets the job done in style.</p>
 			<p class="w2 w">Graphic Designing</p>
 			<p class="w3 w">Every great design begins with an even better story. Just give me a idea and I get you the best Design you could have ever imagined</p>
-			<p class="w2 w">Video Editing</p>
-			<p class="w3 w"></p>
-			<p class="w2 w">Script Writing</p>
+			<p class="w2 w">Hardware Repairing</p>
+			<p class="w3 w">Got into this buisness after repairing the old laptop given by my uncle. Repared gadgets from as simple as smartphones to as complex as LCD TV</p>
+			<p class="w2 w"></p>
 			<p class="w3 w"></p>
 
-			<!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-		    </div> -->
+			
 
 
  		</div>
  	</section>
 
+ 	
+
     <section id="Services">
+
+
+    	
+
+
+
+
+		<!-- <script src="assets/js/vendor.mind28d.js?v=1.8"></script>
+		<script src="assets/js/plugins.mind28d.js?v=1.8"></script>
+		<script src="assets/js/scripts.mind28d.js?v=1.8"></script> -->
+
+
+
+		<!--Wait A Minute-->
+
+
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     	<div class="container">
   <h1 class="title">I code | build | develop | design | create for everyone.</h1>
@@ -446,7 +509,7 @@ document.getElementById('dark-mode-btn').addEventListener('click', function (e) 
 }*/
 
 .container {
-  overflow: hidden;
+  overflow: hidden !important;
   background: black;
   cursor: ew-resize;
   white-space: nowrap;
@@ -547,8 +610,8 @@ window.requestAnimationFrame(animateMe);
 
 </div>
 
-<div class="ser">
-	<!-- <div class="ser-only-ad"><center>SERVICES</center></div> -->
+<!-- <div class="ser">
+	
 
 	<div class="left-services">
 	<h3>1. Web Development</h3>
@@ -557,19 +620,9 @@ window.requestAnimationFrame(animateMe);
 	<div><img src="./Nucleus/images/s21.jpg"><img src="./Nucleus/images/s22.jpg"><img src="./Nucleus/images/s23.jpg"><img src="./Nucleus/images/s24.jpg"></div>
 	<h3>3. Graphic Designing</h3>
 	<div><img src="./Nucleus/images/s31.jpg"><img src="./Nucleus/images/s32.jpg"><img src="./Nucleus/images/s33.jpg"></div>
-	<!-- <h3>2. Video Editing</h3>
-	<h3>3. Subtitle Writing</h3>
-	<h3>4. Editing Reels</h3>
-	<h3>5. Graphic Designing</h3>
-	<h3>6. Script Writing</h3>
-	<h3>7. Linkedin & Twitter Management</h3>
-	<h3>8. Email Marketing</h3>
-	<h3>9. Community Management</h3>
-	<h3>10. Any Other Social Media Management</h3>
-	<h3>11. Social Media Marketing</h3>
-	<h3>12. Short Film Animation</h3> -->
+	
     </div>
-
+ -->
 
 
 
@@ -579,7 +632,139 @@ window.requestAnimationFrame(animateMe);
 </div> -->
 
 
+<div class="services-brand">
+    		<p>SERVICES</p>
+    		
+    			<!-- <div class="flex-container" style="left: -10vw;">
+  <div>
+		<svg id="icosahedron" style="right: -20vw; position: relative;">
+			<rect width="100%" height="100%" fill="none"></rect>
+		</svg>
+		 
+  </div> 
+  </div> -->
+
+  <!-- <div id="view" style="width:0em; height:0em; margin:80px auto 0 auto; position: relative; top: -50vh; right: 0;">
+
+<div id="box">
+<div class="one"><div></div></div>
+<div class="two"><div></div></div>
+<div class="three"><div></div></div>
+<div class="four"><div></div></div>
+<div class="five"><div></div></div>
+<div class="six"><div></div></div>
+</div>
+
+</div> -->
+
+
+    	</div>
+
+    	<div class="services-main">
+    		<div class="services-section">
+    			<div>
+    			<h2>Full-Stack Web Development</h2>
+    			<p>Quisque fermentum vulputate, interdum lorem, aenean duis aliquet venenatis curabitur. Interdum dapibus elit porttitor, non cursus enim, mollis pretium vivamus eleifend venenatis molestie nulla. Aenean luctus ad lacinia, pretium urna felis, turpis aliquet imperdiet quisque amet sem. Dictumst imperdiet lobortis ut, hac porta pulvinar, fames ad per purus porttitor ligula congue. Bibendum interdum ipsum, ultricies lorem, purus dictumst orci phasellus laoreet quisque vel. Elementum donec aliquet, leo primis, metus conubia potenti mollis lorem eu cras. Eleifend platea, tempor nulla etiam. Quisque sit nullam lacus, platea accumsan suspendisse, nisi ullamcorper rutrum est eu nostra. Imperdiet conubia, ullamcorper nostra elementum. Aliquam sem, ullamcorper sociosqu sollicitudin tempor.</p>
+    		    </div>
+    			<img src="./Nucleus/images/s11.jpg">
+    		</div>
+    		<div class="services-section">
+    			<div>
+    			<h2>Electronics & Hardware Reparing</h2>
+    			<p>Quisque fermentum vulputate, interdum lorem, aenean duis aliquet venenatis curabitur. Interdum dapibus elit porttitor, non cursus enim, mollis pretium vivamus eleifend venenatis molestie nulla. Aenean luctus ad lacinia, pretium urna felis, turpis aliquet imperdiet quisque amet sem. Dictumst imperdiet lobortis ut, hac porta pulvinar, fames ad per purus porttitor ligula congue. Bibendum interdum ipsum, ultricies lorem, purus dictumst orci phasellus laoreet quisque vel. Elementum donec aliquet, leo primis, metus conubia potenti mollis lorem eu cras. Eleifend platea, tempor nulla etiam. Quisque sit nullam lacus, platea accumsan suspendisse, nisi ullamcorper rutrum est eu nostra. Imperdiet conubia, ullamcorper nostra elementum. Aliquam sem, ullamcorper sociosqu sollicitudin tempor.</p>
+    		    </div>
+    			<img src="./Nucleus/images/s22.jpg">
+    		</div>
+    		<div class="services-section">
+    			<div>
+    			<h2>Graphic Designing</h2>
+    			<p>Quisque fermentum vulputate, interdum lorem, aenean duis aliquet venenatis curabitur. Interdum dapibus elit porttitor, non cursus enim, mollis pretium vivamus eleifend venenatis molestie nulla. Aenean luctus ad lacinia, pretium urna felis, turpis aliquet imperdiet quisque amet sem. Dictumst imperdiet lobortis ut, hac porta pulvinar, fames ad per purus porttitor ligula congue. Bibendum interdum ipsum, ultricies lorem, purus dictumst orci phasellus laoreet quisque vel. Elementum donec aliquet, leo primis, metus conubia potenti mollis lorem eu cras. Eleifend platea, tempor nulla etiam. Quisque sit nullam lacus, platea accumsan suspendisse, nisi ullamcorper rutrum est eu nostra. Imperdiet conubia, ullamcorper nostra elementum. Aliquam sem, ullamcorper sociosqu sollicitudin tempor.</p>
+    		    </div>
+    			<img src="./Nucleus/images/s32.jpg">
+    		</div>
+    	</div>
+
+    	<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="d3.geoPolyhedron.js"></script>
+
+<script>
+var width = 800, height = 800;
+var polyhedron = d3.set(['icosahedron', 'dodecahedron', 'octahedron', 'hexahedron', 'tetrahedron']);
+var isTransparent = [false, false, false, false, false];
+
+var velocity = [.025, .025],
+    t0 = Date.now();
+
+var projection = d3.geoOrthographic()
+    .scale(height / 2 - 6)
+// translate the origin of the map to [0,0] as a start, not to the now meaningless default of [480,250]
+	.translate([width/2, height / 2]);
+
+var geoGenerator = d3.geoPath()
+  .projection(projection);
+  
+ var svg = [];
+ var rect = [];
+ var faceGroup = [], labelGroup = [];
+ var face = [], label = [];
+ 
+for (i = 0; i < polyhedron.size(); i++) 
+{
+	var p = polyhedron.values()[i];
+	
+	svg[i] = d3.select('#'+ p); //.append('svg')
+		//.attr("width", width)
+		//.attr("height", height);
+	//rect[i] = svg[i].append("rect")
+		//.attr("width", "100%")
+		//.attr("height", "100%");	
+	faceGroup[i] = svg[i].append("g");
+	labelGroup[i] = svg[i].append("g");
+	
+
+    // Add the triangular face
+	face[i] = faceGroup[i].selectAll(".face")
+		.data(d3.geoPolyhedron[p])
+		.enter().append("path")
+			.attr("class", "face");
+	// ... and label each face
+	label[i] = labelGroup[i].selectAll(".label")
+		.data(d3.geoPolyhedron[p])
+		.enter().append("text")
+			.attr("class", "label")	
+			.text(function(d, i){ return i; });	
+}	
+
+d3.timer(function() {
+    var time = Date.now() - t0;
+    projection.rotate([time * velocity[0], time * velocity[1]]);
+
+	for (i = 0; i < polyhedron.size(); i++) 
+	{
+		face[i]
+			.each(function(d) { d.polygon = d.map(projection); })
+			.style("display", function(d) { return d3.polygonArea(d.polygon) > 0 ? null : (isTransparent[i] ? "none" : null); })
+			.attr("d", function(d) { return 'M' + d.polygon.join('L') + 'Z'; });
+
+		label[i]
+			.attr("x", function(d){ return d3.polygonCentroid(d.polygon)[0];})
+			.attr("y", function(d){ return d3.polygonCentroid(d.polygon)[1];})
+			.style("display", function(d) { return d3.polygonArea(d.polygon) > 0 ? null : (isTransparent[i] ? "none" : null); });
+	}
+
+})
+	
+function DoItTransparent(i) { isTransparent[i] = !isTransparent[i];}
+
+</script>
+
+
     </section>
+
+
+
+
+
  <section id="Work">
         <div class="finest">
 
@@ -627,6 +812,13 @@ window.requestAnimationFrame(animateMe);
 </section>
 
 
+
+<div class="changing-colors">
+	
+	<span>LET'S BUILD SOMETHING</span>
+	<span>AMAZING TOGETHER</span>
+
+</div>
 
 
 
@@ -804,6 +996,14 @@ window.requestAnimationFrame(animateMe);
 
 </section>
 
+
+<script>
+  var load = document.getElementById('Preloader');
+  function loading(){
+    load.style.display = 'none';
+  }
+  
+</script>
 
 </body>
 </html>

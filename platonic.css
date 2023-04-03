@@ -1,0 +1,48 @@
+.flex-container {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.flex-container>div {
+  /*background-color: lightgreen;*/
+  margin: 0px;
+  text-align: center;
+}
+
+svg {
+    /*border: dashed 1px lightblue;*/
+	margin: auto;
+	display: block;
+	width: 800px;
+	height: 800px;
+	fill: none;
+	
+}
+
+
+.face{
+	/*fill: black;*/
+	fill-opacity: 0.5;
+	stroke: darkgreen;
+	stroke: #5d07ad;
+	stroke-width: 8px;
+}
+.label{
+	text-anchor: middle;
+	font-size: 6pt;
+	font-weight: bold;
+}
+
+.chkbox {
+	margin: auto;
+	text-align: left;
+	background-color: darkred;
+}
+  
+h3 {
+	margin: auto;
+	text-align: center;
+}
