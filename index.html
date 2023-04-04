@@ -343,8 +343,8 @@ window.addEventListener("scroll", changeCss , false);
 
 
 	<div class="home-button">
-		<button><a href="#Contact">Contact Me</a></button>
-		<button><a href="https://sanket-25.github.io/resume.github.io" target="_blank">Resume</a></button>
+		<button onclick="document.location='#Contact'">Contact Me</button>
+		<button onclick="document.location='https://sanket-25.github.io/resume.github.io'" target="_blank">Resume</button>
 	</div>
 
 </div>
@@ -361,7 +361,7 @@ window.addEventListener("scroll", changeCss , false);
 <!-- <div class="grandparent">
 <div class="parent">
  -->
-<div id="view" style="width:0em; height:0em; margin:80px auto 0 auto; position: relative; top: -100vh; right: 0;">
+<div id="view" style="width:0em; height:0em; margin:80px auto 0 auto; position: relative; top: -100vh; right: -10vw;">
 
 <div id="box">
 <div class="one"><div></div></div>
@@ -452,7 +452,7 @@ window.addEventListener("scroll", changeCss , false);
           </div>
 
 
-                <!-- <div class="hey-work">
+                <div class="hey-work">
 			<p class="w1 w">Development</p>
 			<p class="w2 w">Front-end Coder</p>
 			<p class="w3 w">Websites are nowadays viewed on multiple devices. With my skills in front-end web technologies such as HTML5, CSS3 and Javascript, I can create a flexible, responsive site that looks good on all screen sizes.</p>
@@ -468,7 +468,7 @@ window.addEventListener("scroll", changeCss , false);
 			<p class="w2 w">Hardware Repairing</p>
 			<p class="w3 w">Got into this buisness after repairing the old laptop given by my uncle. Repared gadgets from as simple as smartphones to as complex as LCD TV</p>
 			<p class="w2 w"></p>
-			<p class="w3 w"></p> -->
+			<p class="w3 w"></p>
 
 			
 
@@ -543,7 +543,8 @@ window.addEventListener("scroll", changeCss , false);
 .title {
   font: bold normal 12vw/1.2 "Montserrat", sans-serif;
   position: relative;
-  color: white;
+  color: var(--coloro-aac);
+  color: gold;
   display: inline-block;
   margin: 0;
   padding: 0 15%;
@@ -657,14 +658,14 @@ window.requestAnimationFrame(animateMe);
 <div class="services-brand">
     		<p>SERVICES</p>
     		
-    			<div class="flex-container" style="left: -10vw;">
+    			<!-- <div class="flex-container" style="left: -10vw;">
   <div>
 		<svg id="icosahedron" style="right: -20vw; position: relative;">
 			<rect width="100%" height="100%" fill="none"></rect>
 		</svg>
 		 
   </div> 
-  </div>
+  </div> -->
 
   <!-- <div id="view" style="width:0em; height:0em; margin:80px auto 0 auto; position: relative; top: -50vh; right: 0;">
 
@@ -682,10 +683,96 @@ window.requestAnimationFrame(animateMe);
 
     	</div>
 
-    	<div class="services-main">
+      <div class="services-main">
+
+
+        <div class="services-section">
+          <div class="services-section-top top-1">
+            <div><img src="./Nucleus/images/img-1a.jpg" class="img-1a"></div><div><img src="./Nucleus/images/img-1b.jpg" class="img-1b"></div>
+            <h2>Full-Stack Web Development</h2>
+            <div class="spinning-star"><img src="./Nucleus/images/star.png"><p class="spinning-name">Web Dev</p></div>
+          </div>
+          <div class="services-section-bottom bottom-1">
+            <div class="services-section-bottom-box bottom-box-1">
+              <div class="services-section-left">
+                <h2>Full-Stack Web Development</h2>
+          <h3>Front-End Development</h3>
+          <p>Websites are nowadays viewed on multiple devices. With my skills in front-end web technologies such as HTML5, CSS3 and Javascript, I can create a flexible, responsive site that looks good on all screen sizes.</p>
+          <h3>Back-End Development</h3>
+          <p>I have vast experience in back-end web technologies such as PHP and MySQL to create multi-functional web portals - from content management systems to full-fledged e-commerce solutions, and beyond.</p>
+          <h3>UI/UX Design</h3>
+          <p>With my mastery in Graphic Designing, I'm proefficient in the perfect design required for you web to attract the audience with glare.</p>
+
+              </div>
+              <div class="services-section-right">
+                <img src="./Nucleus/images/img-1c.jpg">
+              </div>
+            </div></div></div>
+
+
+
+
+            <div class="services-section">
+          <div class="services-section-top top-2">
+            <div><img src="./Nucleus/images/img-2a.jpg" class="img-1a"></div><div><img src="./Nucleus/images/img-2b.jpg" class="img-1b"></div>
+            <h2>Electronics & Hardware Repairing</h2>
+            <div class="spinning-star"><img src="./Nucleus/images/star.png"><p class="spinning-name">Web Dev</p></div>
+          </div>
+          <div class="services-section-bottom bottom-2">
+            <div class="services-section-bottom-box bottom-box-2">
+              <div class="services-section-left">
+                <h2>Electronics & Hardware Reparing</h2>
+          <p>Got into this buisness after repairing the old laptop given by my uncle. Repared gadgets from as simple as smartphones to as complex as LCD TV</p>
+
+              </div>
+              <div class="services-section-right">
+                <img src="./Nucleus/images/img-2c.jpg">
+              </div>
+            </div></div></div>
+
+
+
+            <div class="services-section">
+          <div class="services-section-top top-3">
+            <div><img src="./Nucleus/images/img-3a.jpg" class="img-1a"></div><div><img src="./Nucleus/images/img-3b.jpg" class="img-1b"></div>
+            <h2>Graphic Designing</h2>
+            <div class="spinning-star"><img src="./Nucleus/images/star.png"><p class="spinning-name">Web Dev</p></div>
+          </div>
+          <div class="services-section-bottom bottom-3">
+            <div class="services-section-bottom-box bottom-box-3">
+              <div class="services-section-left">
+                <h2>Graphic Designing</h2>
+          <p>Every great design begins with an even better story. Just give me a idea and I get you the best Design you could have ever imagined. I am a graphic designer. I will create icons and social media posts. I design eye-catching and creative posts for social media, as well as original icons for websites, apps, labels, and most other icons, which I can create easily. If you have any work then discuss it with me. I am available to solve your problem with my skills and experience.</p>
+
+              </div>
+              <div class="services-section-right">
+                <img src="./Nucleus/images/img-3c.jpg">
+              </div>
+            </div></div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          </div>
+
+
+
+    	<!-- <div class="services-main">
     		<div class="services-section">
-    			<div>
-    			<h2>Full-Stack Web Development</h2>
+    			<div class="services-section-1">
+    			<h2>Full-Stack</h2><span>Web Development</span>
           <h3>Front-End Development</h3>
     			<p>Websites are nowadays viewed on multiple devices. With my skills in front-end web technologies such as HTML5, CSS3 and Javascript, I can create a flexible, responsive site that looks good on all screen sizes.</p>
           <h3>Back-End Development</h3>
@@ -693,23 +780,23 @@ window.requestAnimationFrame(animateMe);
           <h3>UI/UX Design</h3>
           <p>With my mastery in Graphic Designing, I'm proefficient in the perfect design required for you web to attract the audience with glare.</p>
     		    </div>
-    			<img src="./Nucleus/images/s11.jpg">
+    			<div class="services-section-2"><img src="./Nucleus/images/s11.jpg"></div>
     		</div>
     		<div class="services-section">
-    			<div>
+    			<div class="services-section-1">
     			<h2>Electronics & Hardware Reparing</h2>
     			<p>Got into this buisness after repairing the old laptop given by my uncle. Repared gadgets from as simple as smartphones to as complex as LCD TV</p>
     		    </div>
-    			<img src="./Nucleus/images/s22.jpg">
+    			<div class="services-section-2"><img src="./Nucleus/images/s22.jpg"></div>
     		</div>
     		<div class="services-section">
-    			<div>
+    			<div class="services-section-1">
     			<h2>Graphic Designing</h2>
     			<p>Every great design begins with an even better story. Just give me a idea and I get you the best Design you could have ever imagined. I am a graphic designer. I will create icons and social media posts. I design eye-catching and creative posts for social media, as well as original icons for websites, apps, labels, and most other icons, which I can create easily. If you have any work then discuss it with me. I am available to solve your problem with my skills and experience.</p>
     		    </div>
-    			<img src="./Nucleus/images/s32.jpg">
-    		</div>
-    	</div>
+    			<div class="services-section-2"><img src="./Nucleus/images/s32.jpg"></div>
+    		</div> -->
+    	</div> 
 
     	<script src="https://d3js.org/d3.v4.min.js"></script>
 <script src="d3.geoPolyhedron.js"></script>

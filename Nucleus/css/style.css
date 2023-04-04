@@ -6,10 +6,13 @@
 /*COLOR SCHEME*/
 
 :root {
+	--coloro-x: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png),linear-gradient(119.42deg,#cc00c4 8.94%,#7d2ae8 54.02%,#00c4cc 95.49%);
+
+
   --coloro-a: floralwhite;
   --coloro-b: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png),linear-gradient(119.42deg,#cc00c4 8.94%,#7d2ae8 54.02%,#00c4cc 95.49%);
   --coloro-c: black;
-  --coloro-d: linear-gradient( to right, #ffbd00, #ff5200 );
+  --coloro-d: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png), linear-gradient( to right, #ffbd00, #ff5200 );
   --coloro-e: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png),linear-gradient(119.42deg,#ff5e00 8.94%,red 54.02%,#ff5700 95.49%);
   --coloro-f:;
   --coloro-g:;
@@ -18,15 +21,26 @@
   --coloro-aa: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png), darkred;
 
 
-  --coloro-aaa: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png),linear-gradient(119.42deg,#ed380b 8.94%,#e97b0a 54.02%,#ffc107 95.49%);
+  --coloro-aaa: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png),linear-gradient(119.42deg,#cc00c4 8.94%,#7d2ae8 54.02%,#00c4cc 95.49%);
   --coloro-aab: #5d07ad;
+  --coloro-aac: white;
+  --coloro-aad: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png), wheat;
+  --coloro-aae: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png), darkred;
+
+  --coloro-aba: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png), darkred;
+  --coloro-abb: wheat;
+  --coloro-abc: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png), green;
+  --coloro-abd: darkorange;
+  --coloro-abe: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png), blue;
+  --coloro-abf: gold;
+
 }
 
 .dark-theme{
   --coloro-a: gold !important;
   --coloro-b: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png),linear-gradient(119.42deg,black 8.94%,black 54.02%,black 95.49%);
   --coloro-c: white !important;
-  --coloro-d: linear-gradient(119.42deg,#cc00c4 8.94%,#7d2ae8 54.02%,#00c4cc 95.49%);
+  --coloro-d: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png), linear-gradient(119.42deg,#cc00c4 8.94%,#7d2ae8 54.02%,#00c4cc 95.49%);
   --coloro-e: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png),linear-gradient( to right, #ffbd00, #ff5200 );;
   --coloro-f:;
   --coloro-g:;
@@ -37,6 +51,14 @@
 
   --coloro-aaa: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png), black;
   --coloro-aab: gold;
+  --coloro-aac: #d6ff41;
+
+  --coloro-aba: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png), darkred;
+  --coloro-abb: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png), wheat;
+  --coloro-abc: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png), green;
+  --coloro-abd: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png), darkorange;
+  --coloro-abe: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png), blue;
+  --coloro-abf: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png), darkred;
 }
 
 
@@ -98,14 +120,14 @@
 }
 
 #box div img {
-	width: 700px;
+	width: 500px;
 }
 
 #box div
 {
 position: absolute;
-height: 700px;
-width: 700px;
+height: 500px;
+width: 500px;
 /*border: 1px solid lightgrey;*/
 background: rgba(255,200,100,0.8);
 text-align: center;
@@ -120,32 +142,32 @@ font-size: 200px;
 -webkit-animation-duration: 9s;
 margin:50;
 -webkit-transform-style: preserve-3d;
--webkit-transform-origin: 350px 350px 0;
+-webkit-transform-origin: 250px 250px 0;
 }
 
 #box .one
 { 
--webkit-transform: translateZ(350px);
+-webkit-transform: translateZ(250px);
 }
 #box .two
 { 
--webkit-transform: rotateX(-90deg) translateZ(350px);
+-webkit-transform: rotateX(-90deg) translateZ(250px);
 }
 #box .three 
 {
--webkit-transform: rotateY(90deg) rotateX(90deg) translateZ(350px);
+-webkit-transform: rotateY(90deg) rotateX(90deg) translateZ(250px);
 }
 #box .four 
 {
--webkit-transform: rotateY(180deg) rotateZ(90deg) translateZ(350px);
+-webkit-transform: rotateY(180deg) rotateZ(90deg) translateZ(250px);
 }
 #box .five
 { 
--webkit-transform: rotateY(-90deg) rotateZ(90deg) translateZ(350px);
+-webkit-transform: rotateY(-90deg) rotateZ(90deg) translateZ(250px);
 }
 #box .six 
 {
--webkit-transform: rotateY(90deg) translateZ(350px);
+-webkit-transform: rotateY(90deg) translateZ(250px);
 }
 
 @-webkit-keyframes animation

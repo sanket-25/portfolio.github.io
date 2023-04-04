@@ -51,8 +51,7 @@ display: none;
     background-color: black;
     color: #ffc107;
     height: 100vh;*/
-    background-color: black;
-    background: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png),linear-gradient(119.42deg,#cc00c4 8.94%,#7d2ae8 54.02%,#00c4cc 95.49%);
+    background: var(--coloro-b);
     image-rendering: pixelated;
     /*color: darkred;*/
     background-color: #673ab7;
@@ -100,12 +99,13 @@ display: none;
     border-radius: 50%;
 }
 #polygon:first-child{
-    background: linear-gradient(
+    /*background: linear-gradient(
         #9b22ea,
         #bf23f6
     );
     background: linear-gradient(#9b22ea, #e9429f);
-    background: linear-gradient( to right, #ffbd00, #ff5200 );
+    background: linear-gradient( to right, #ffbd00, #ff5200 );*/
+    background: var(--coloro-d);
 
     bottom: -30vh;
     left: -25vw;
@@ -282,6 +282,19 @@ display: none;
 
 }
 
+.home-button button a {
+  color: white;
+  text-decoration: none;
+
+}
+
+.home-button button:hover {
+  background-color: white !important;
+  color: #022e02;
+}
+
+
+
 
 #About {
     background-color: red;
@@ -319,7 +332,7 @@ display: none;
     position: sticky;
     top: 42%;
     width: 30%;
-    display: none;
+    display: none !important;
 }
 
 
@@ -491,13 +504,24 @@ a{
 
 .services-brand p {
   color: darkred;
-  font-size: 5vw;
-  font-family: sans-serif;
+  font-size: 10vw;
+  font-family: 'Playfair Display', serif;
   font-weight: 900;
+  position: relative;
+  left: 50%;
+  transform: translate(-70%, 0);
 
 }
 
-.services-main {
+
+
+
+
+
+
+
+
+/*.services-main {
   margin-top: 10vh;
 }
 
@@ -531,7 +555,7 @@ a{
 .services-section img {
   width: 40%;
   height: 40%;  
-}
+}*/
 
 
 
