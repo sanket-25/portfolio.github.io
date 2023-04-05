@@ -6,7 +6,7 @@
 /*COLOR SCHEME*/
 
 :root {
-	--coloro-x: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png),linear-gradient(119.42deg,#cc00c4 8.94%,#7d2ae8 54.02%,#00c4cc 95.49%);
+  --coloro-x: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png),linear-gradient(119.42deg,#cc00c4 8.94%,#7d2ae8 54.02%,#00c4cc 95.49%);
 
 
   --coloro-a: floralwhite;
@@ -19,20 +19,31 @@
 
 
   --coloro-aa: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png), darkred;
+  --coloro-ab: gold;
+  --coloro-ac: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png), white;
+  --coloro-ad: black;
 
 
-  --coloro-aaa: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png),linear-gradient(119.42deg,#cc00c4 8.94%,#7d2ae8 54.02%,#00c4cc 95.49%);
-  --coloro-aab: #5d07ad;
-  --coloro-aac: white;
-  --coloro-aad: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png), wheat;
-  --coloro-aae: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png), darkred;
 
-  --coloro-aba: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png), darkred;
+  --coloro-aaa: #d6ff41;
+  --coloro-aab: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png),linear-gradient(119.42deg,#cc00c4 8.94%,#7d2ae8 54.02%,#00c4cc 95.49%);
+  --coloro-aac: #ffc107;
+
+  --coloro-aba: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png), darkred !important;
   --coloro-abb: wheat;
   --coloro-abc: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png), green;
   --coloro-abd: darkorange;
   --coloro-abe: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png), blue;
   --coloro-abf: gold;
+  --coloro-abg: darkred;
+  --coloro-abh: green;
+  --coloro-abi: blue;
+
+
+  --coloro-aaaa: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png), linear-gradient(135deg, #f4583a 0%,#cd1e38 100%);
+  --coloro-aaab: #E33E39;
+  --coloro-aaac: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png), #d4fef2;
+  --coloro-aaad: #062930;
 
 }
 
@@ -41,24 +52,36 @@
   --coloro-b: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png),linear-gradient(119.42deg,black 8.94%,black 54.02%,black 95.49%);
   --coloro-c: white !important;
   --coloro-d: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png), linear-gradient(119.42deg,#cc00c4 8.94%,#7d2ae8 54.02%,#00c4cc 95.49%);
-  --coloro-e: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png),linear-gradient( to right, #ffbd00, #ff5200 );;
+  --coloro-e: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png),linear-gradient( to right, #ffbd00, #ff5200 );
   --coloro-f:;
   --coloro-g:;
 
 
-  --coloro-aa: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png), black;
+  --coloro-aa: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png), #673ab7;
+  --coloro-ab: black;
+  --coloro-ac: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png), black;
+  --coloro-ad: white;
 
 
-  --coloro-aaa: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png), black;
-  --coloro-aab: gold;
-  --coloro-aac: #d6ff41;
+  --coloro-aaa: white;
+  --coloro-aab: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png), black;
+  --coloro-aac: #673ab7;
 
-  --coloro-aba: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png), darkred;
-  --coloro-abb: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png), wheat;
-  --coloro-abc: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png), green;
-  --coloro-abd: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png), darkorange;
-  --coloro-abe: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png), blue;
-  --coloro-abf: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png), darkred;
+  --coloro-aba: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png), #673ab7;
+  --coloro-abb: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png), black;
+  --coloro-abc: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png), black;
+  --coloro-abd: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png), #673ab7;
+  --coloro-abe: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png), #673ab7;
+  --coloro-abf: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png), black;
+  --coloro-abg: #673ab7;
+  --coloro-abh: black;
+  --coloro-abi: #673ab7;
+
+
+  --coloro-aaaa: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png), black;
+  --coloro-aaab: #673ab7;
+  --coloro-aaac: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png), #673ab7;
+  --coloro-aaad: black;
 }
 
 

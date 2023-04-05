@@ -325,7 +325,7 @@ html {
 
 
 #About .left-about h2 {
-    color: #ffc107;
+    color: var(--coloro-ab);
     text-align: center;
     display: flex;
     position: fixed;
@@ -359,7 +359,7 @@ html {
 #About .right-about {
 /*    position: relative;*/
     width: 50%;
-    background: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png), white;
+    background: var(--coloro-ac);
 
 
 
@@ -389,7 +389,7 @@ html {
 
 
 .hey p {
-    color: black;
+    color: var(--coloro-ad);
     font-size: x-large;
     font-family: 'Yatra One', cursive;
 }
@@ -481,10 +481,10 @@ a{
 
 /* Aesthetics */
 .top-section{
-  background: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png), linear-gradient(135deg, #f4583a 0%,#cd1e38 100%);
+  background: var(--coloro-aaaa);
 }
 .bottom-section{
-  background: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png), #d4fef2;
+  background: var(--coloro-aaac);
 }
 .section h1{
   font-size: 200px;
@@ -501,7 +501,7 @@ a{
 }
 
 .content-theme-dark h1{
-  color: #E33E39;
+  color: var(--coloro-aaab);
   text-shadow: 0 20px 40px rgba(0,0,0,.5);
 }
 .content-theme-dark p,
@@ -509,7 +509,7 @@ a{
   color: #FEA98D;
 }
 .content-theme-light h1{
-  color:#062930;
+  color: var(--coloro-aaad);
   text-shadow: 0 20px 40px rgba(0,0,0,.5);
 }
 .content-theme-light p,
@@ -536,14 +536,14 @@ a{
   align-items: center !important;
   height: 100vh;
   padding: 2vw;
-    background: var(--coloro-aaa);
+    background: var(--coloro-aab);
 
 
 
 }
 
 .services-brand p {
-  color: gold;
+  color: var(--coloro-aac);
   font-size: 10vw;
   font-family: 'Playfair Display', serif;
   font-weight: 900;
@@ -573,8 +573,8 @@ a{
 .spinning-star {
   display: flex;
   position: absolute;
-  top: 10vh;
-  right: 10vw;
+  top: 5vh;
+  right: 5vw;
   text-align: center !important;
 
 
@@ -664,6 +664,19 @@ a{
 
 }
 
+.services-section-left h2 {
+  color: darkred;
+  font-size: 4vw;
+  font-family: sans-serif;
+  margin-bottom: 5vh;
+
+}
+
+.services-section-left p {
+  font-size: 1.2vw;
+  font-family: sans-serif;
+}
+
 .services-section-right {
   padding: 2vw;
   display: flex;
@@ -671,9 +684,8 @@ a{
 }
 
 .services-section-right img {
-  text-align: center;
-  position: relative;
-  justify-content: center;
+  width: 100%;
+  height: auto;
 }
 
 
@@ -693,7 +705,9 @@ a{
 .bottom-box-1 {
   background: var(--coloro-abb) !important;
 }
-
+.bottom-left-1 h2{
+  color: var(--coloro-abg);
+}
 
 .top-2 {
   background: var(--coloro-abc) !important;
@@ -709,6 +723,9 @@ a{
 .bottom-box-2 {
   background: var(--coloro-abd) !important;
 }
+.bottom-left-2 h2{
+  color: var(--coloro-abh);
+}
 
 .top-3 {
   background: var(--coloro-abe) !important;
@@ -723,6 +740,9 @@ a{
 }
 .bottom-box-3 {
   background: var(--coloro-abf) !important;
+}
+.bottom-left-3 h2{
+  color: var(--coloro-abi);
 }
 
 
