@@ -107,7 +107,7 @@ display: none;
     background: linear-gradient( to right, #ffbd00, #ff5200 );*/
     background: var(--coloro-d);
 
-    bottom: -30vh;
+    bottom: -40vh;
     left: -25vw;
     /*filter: blur(1.5em);*/
 }
@@ -175,7 +175,7 @@ display: none;
     position: absolute;
 /*    left: 5em;*/
     padding: 1em;
-    display: none;
+    /*display: none;*/
 
 
 }
@@ -193,7 +193,7 @@ display: none;
 .nav-hall {
     text-decoration: none;
     list-style-type: none;
-    color: #ffc107;
+    color: var(--coloro-c);
     padding: 0.1em;
     font-size: 3.8vw;
     font-weight: bold;
@@ -214,7 +214,7 @@ display: none;
   position: absolute;
     z-index: 3;
     font-size: 5vw;
-    top: 40vh;
+    top: 20vh;
     left: 6vw;
 }
 
@@ -247,12 +247,12 @@ display: none;
     position: absolute;
     z-index: 3;
     font-size: 7vw;
-    top: 45vh;
+    top: 25vh;
     left: 6vw;
     font-family: 'Abril Fatface', cursive;
     font-family: sans-serif;
     font-weight: 600;
-    color: #022e02;
+    color: var(--coloro-g);
 }
 
 #d-f span {
@@ -269,7 +269,7 @@ display: none;
 .home-button button {
   position: relative;
   z-index: 300;
-  top: -50vh;
+  top: -70vh;
   left: 10vw;
   width: 35vw;
   margin: 2vw;
@@ -513,7 +513,195 @@ a{
 
 }
 
+.services-main {
 
+}
+
+.services-section {
+    background: var(--coloro-aae);
+
+}
+
+.services-section-top {
+  height: 110vh;
+  width: 100vw;
+  position: relative;
+}
+
+.spinning-star {
+  display: flex;
+  position: absolute;
+  top: 5vh;
+  right: 5vw;
+  text-align: center !important;
+
+
+
+}
+
+.spinning-star img{
+  width: 3vw;
+  height: 3vw;
+  display: flex;
+  z-index: 600;
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+
+@-moz-keyframes spin { 
+    100% { -moz-transform: rotate(360deg); } 
+}
+@-webkit-keyframes spin { 
+    100% { -webkit-transform: rotate(360deg); } 
+}
+@keyframes spin { 
+    100% { 
+        -webkit-transform: rotate(360deg); 
+        transform:rotate(360deg); 
+    } 
+}
+}
+
+.spinning-name {
+  color: var(--coloro-abb);
+  top: 1vh;
+  color: gold;
+  font-size: 3vw;
+}
+
+
+.img-1a {
+  position: absolute;
+  top: 5vh;
+  left: 5vw;
+  width: 40vw !important;
+}
+
+.img-1b {
+  position: absolute;
+  bottom: 5vh;
+  right: 10vw;
+  width: 30vw;
+}
+
+.services-section-top h2 {
+  color: wheat;
+  font-weight: 900;
+  font: bold normal 8vw/1.2 "Montserrat", sans-serif;
+  width: 50vw;
+  position: absolute;
+  bottom: 5vh;
+  left: 2vw;
+}
+
+.services-section-bottom {
+  height: 110vh;
+  width: 100vw;
+  position: relative;
+}
+
+.services-section-bottom-box {
+  background-color: wheat;
+  border-radius: 30px;
+  height: 90vh;
+  width: 90vw;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+
+}
+
+.services-section-left {
+  width: 50%;
+  padding: 2vw;
+
+}
+
+.services-section-left h2 {
+  color: darkred;
+  font-size: 4vw;
+  font-family: sans-serif;
+  margin-bottom: 5vh;
+
+}
+
+.services-section-left p {
+  font-size: 1.2vw;
+  font-family: sans-serif;
+}
+
+.services-section-right {
+  padding: 2vw;
+  display: flex;
+  justify-content: center;
+}
+
+.services-section-right img {
+  width: 100%;
+  height: auto;
+}
+
+
+
+
+.top-1 {
+  background: var(--coloro--aba) !important;
+}
+
+.top-1 h2 {
+  color: var(--coloro-abb) !important;
+}
+
+.bottom-1 {
+  background: var(--coloro-aba) !important;
+}
+.bottom-box-1 {
+  background: var(--coloro-abb) !important;
+}
+.bottom-left-1 h2{
+  color: var(--coloro-abg);
+}
+
+.top-2 {
+  background: var(--coloro-abc) !important;
+}
+
+.top-2 h2 {
+  color: var(--coloro-abd) !important;
+}
+
+.bottom-2 {
+  background: var(--coloro-abc) !important;
+}
+.bottom-box-2 {
+  background: var(--coloro-abd) !important;
+}
+.bottom-left-2 h2{
+  color: var(--coloro-abh);
+}
+
+.top-3 {
+  background: var(--coloro-abe) !important;
+}
+
+.top-3 h2 {
+  color: var(--coloro-abf) !important;
+}
+
+.bottom-3 {
+  background: var(--coloro-abe) !important;
+}
+.bottom-box-3 {
+  background: var(--coloro-abf) !important;
+}
+.bottom-left-3 h2{
+  color: var(--coloro-abi);
+}
 
 
 

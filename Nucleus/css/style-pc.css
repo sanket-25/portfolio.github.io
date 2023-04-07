@@ -232,11 +232,12 @@ html {
 }
 
 .hello p {
-  position: absolute;
+    position: absolute;
     z-index: 3;
     font-size: 3vw;
     top: 40vh;
     left: 10vw;
+    color: var(--coloro-f);
 }
 
 
@@ -259,7 +260,7 @@ html {
     font-family: 'Abril Fatface', cursive;
     font-family: sans-serif;
     font-weight: 600;
-    color: #022e02;
+    color: ;
 }
 
 #d-f span {
