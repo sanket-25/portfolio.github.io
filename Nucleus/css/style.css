@@ -37,8 +37,8 @@
   --coloro-abe: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png), blue;
   --coloro-abf: gold;
   --coloro-abg: darkred;
-  --coloro-abh: green;
-  --coloro-abi: blue;
+  --coloro-abh: #7d2ae8;
+  --coloro-abi: #00c4cc;
 
 
   --coloro-aaaa: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png), linear-gradient(135deg, #f4583a 0%,#cd1e38 100%);
@@ -60,7 +60,7 @@
 
 
   --coloro-aa: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png), #673ab7;
-  --coloro-ab: black;
+  --coloro-ab: gold;
   --coloro-ac: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png), black;
   --coloro-ad: white;
 

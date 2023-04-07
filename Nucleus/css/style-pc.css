@@ -237,7 +237,7 @@ html {
     font-size: 3vw;
     top: 40vh;
     left: 10vw;
-    color: var(--coloro-f);
+    color: black;
 }
 
 
@@ -260,13 +260,14 @@ html {
     font-family: 'Abril Fatface', cursive;
     font-family: sans-serif;
     font-weight: 600;
-    color: ;
+    color: #022e02;
 }
 
 #d-f span {
   font-family: 'Playfair Display', serif;
   color: #4808ab;
   color: white;
+
 }
 
 .home-button {
@@ -524,8 +525,10 @@ a{
 
 #Services {
   overflow-x: hidden;
-  background-color: #ffc107;
+  /*background-color: #ffc107;*/
+  /*background-color: red;*/
   /*background: var(--coloro-aaa);*/
+  background: var(--coloro-b);
   z-index: 500;
   position: relative;
 
@@ -537,7 +540,7 @@ a{
   align-items: center !important;
   height: 100vh;
   padding: 2vw;
-    background: var(--coloro-aab);
+    /*background: var(--coloro-aab);*/
 
 
 
@@ -560,10 +563,10 @@ a{
 
 }
 
-.services-section {
+/*.services-section {
     background: var(--coloro-aae);
 
-}
+}*/
 
 .services-section-top {
   height: 110vh;
@@ -629,7 +632,7 @@ a{
 }
 
 .services-section-top h2 {
-  color: wheat;
+  color: wheat !important;
   font-weight: 900;
   font: bold normal 8vw/1.2 "Montserrat", sans-serif;
   width: 50vw;
@@ -666,7 +669,7 @@ a{
 }
 
 .services-section-left h2 {
-  color: darkred;
+  color: linear-gradient(119.42deg,#cc00c4 8.94%,#7d2ae8 54.02%,#00c4cc 95.49%);
   font-size: 4vw;
   font-family: sans-serif;
   margin-bottom: 5vh;
@@ -693,7 +696,9 @@ a{
 
 
 .top-1 {
-  background: var(--coloro--aba) !important;
+  /*background: var(--coloro-aba) !important;*/
+  /*background: var(--coloro-x);*/
+  /*background-color: darkred;*/
 }
 
 .top-1 h2 {
@@ -701,13 +706,14 @@ a{
 }
 
 .bottom-1 {
-  background: var(--coloro-aba) !important;
+  /*background: var(--coloro-aba) !important;*/
 }
 .bottom-box-1 {
   background: var(--coloro-abb) !important;
 }
 .bottom-left-1 h2{
-  color: var(--coloro-abg);
+  color: #cc00c4;
+ 
 }
 
 .top-2 {

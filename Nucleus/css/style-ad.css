@@ -252,13 +252,12 @@ display: none;
     font-family: 'Abril Fatface', cursive;
     font-family: sans-serif;
     font-weight: 600;
-    color: var(--coloro-g);
+    color: #022e02;
 }
 
 #d-f span {
   font-family: 'Playfair Display', serif;
-  color: #4808ab;
-  color: white;
+  color: var(--coloro-h);
 }
 
 .home-button {
