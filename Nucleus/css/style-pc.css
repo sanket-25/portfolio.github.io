@@ -508,7 +508,7 @@ a{
 }
 .content-theme-dark p,
 .content-theme-dark a{
-  color: #FEA98D;
+  color: var(--coloro-aaae);
 }
 .content-theme-light h1{
   color: var(--coloro-aaad);
@@ -516,7 +516,7 @@ a{
 }
 .content-theme-light p,
 .content-theme-light a{
-  color: #728E93;
+  color: var(--coloro-aaaf);
 }
 
 
@@ -712,7 +712,7 @@ a{
   background: var(--coloro-abb) !important;
 }
 .bottom-left-1 h2{
-  color: #cc00c4;
+  color: var(--coloro-abj);
  
 }
 

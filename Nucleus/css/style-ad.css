@@ -468,7 +468,7 @@ a{
 }
 .content-theme-dark p,
 .content-theme-dark a{
-  color: #FEA98D;
+  color: var(--coloro-aaae);
 }
 .content-theme-light h1{
   color:#062930;
@@ -476,7 +476,7 @@ a{
 }
 .content-theme-light p,
 .content-theme-light a{
-  color: #728E93;
+  color: var(--coloro-aaaf);
 }
 
 
@@ -487,8 +487,7 @@ a{
 
 
 #Services {
-  background-color: #ffc107;
-  background: var(--coloro-aaa);
+  background: var(--coloro-b);
   overflow-x: hidden;
 
 }
@@ -502,13 +501,13 @@ a{
 }
 
 .services-brand p {
-  color: darkred;
-  font-size: 10vw;
+  color: var(--coloro-aac);
+  font-size: 16vw;
   font-family: 'Playfair Display', serif;
   font-weight: 900;
-  position: relative;
+  position: absolute;
   left: 50%;
-  transform: translate(-70%, 0);
+  transform: translate(-50%, 0);
 
 }
 
@@ -622,7 +621,7 @@ a{
 }
 
 .services-section-left h2 {
-  color: darkred;
+  color: ;
   font-size: 4vw;
   font-family: sans-serif;
   margin-bottom: 5vh;
@@ -649,7 +648,7 @@ a{
 
 
 .top-1 {
-  background: var(--coloro--aba) !important;
+  /*background: var(--coloro--aba) !important;*/
 }
 
 .top-1 h2 {
@@ -657,7 +656,7 @@ a{
 }
 
 .bottom-1 {
-  background: var(--coloro-aba) !important;
+  /*background: var(--coloro-aba) !important;*/
 }
 .bottom-box-1 {
   background: var(--coloro-abb) !important;
