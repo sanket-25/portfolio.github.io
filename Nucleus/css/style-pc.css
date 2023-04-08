@@ -611,7 +611,7 @@ a{
 
 .spinning-name {
   color: var(--coloro-abb);
-  top: 1vh;
+  top: 20vh;
   color: gold;
   font-size: 3vw;
 }
@@ -621,12 +621,40 @@ a{
   position: absolute;
   top: 5vh;
   left: 5vw;
-  width: 40vw !important;
+  width: 50vw !important;
 }
 
 .img-1b {
   position: absolute;
   bottom: 5vh;
+  right: 2vw;
+  width: 40vw;
+}
+
+.img-2a {
+  position: absolute;
+  top: 5vh;
+  left: 5vw;
+  width: 50vw !important;
+}
+
+.img-2b {
+  position: absolute;
+  bottom: 5vh;
+  right: 10vw;
+  width: 30vw;
+}
+
+.img-3a {
+  position: absolute;
+  top: 5vh;
+  left: 5vw;
+  width: 30vw !important;
+}
+
+.img-3b {
+  position: absolute;
+  bottom: 0vh;
   right: 10vw;
   width: 30vw;
 }
@@ -674,6 +702,12 @@ a{
   font-family: sans-serif;
   margin-bottom: 5vh;
 
+}
+
+.services-section-left h3 {
+  color: black;
+  text-align: left;
+  margin: 3vh;
 }
 
 .services-section-left p {
