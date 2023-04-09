@@ -70,6 +70,8 @@ display: none;
     font-size: larger;
     padding: 1em;
 /*    margin-left: 4em;*/
+    color: gold;
+    font-family: 'Uncial Antiqua', cursive;
 }
 
 .mememe img {
@@ -194,6 +196,7 @@ display: none;
     text-decoration: none;
     list-style-type: none;
     color: var(--coloro-c);
+    color: #ffe5e5;
     padding: 0.1em;
     font-size: 3.8vw;
     font-weight: bold;
@@ -211,11 +214,13 @@ display: none;
 }
 
 .hello p {
-  position: absolute;
+    position: absolute;
     z-index: 3;
     font-size: 5vw;
     top: 20vh;
     left: 6vw;
+    font-weight: 800;
+    color: var(--coloro-f);
 }
 
 .sanket-h1-0 {
@@ -251,8 +256,8 @@ display: none;
     left: 6vw;
     font-family: 'Abril Fatface', cursive;
     font-family: sans-serif;
-    font-weight: 600;
-    color: #022e02;
+    font-weight: 900;
+    color: var(--coloro-g);
 }
 
 #d-f span {
@@ -316,9 +321,9 @@ display: none;
     color: #ffc107;
     text-align: center;
     display: flex;
-    position: sticky;
+    position: relative;
     font-size: 13vw;
-    top: 42%;
+    top: 45%;
     font-family: 'Rubik Glitch', cursive;
     font-family: 'Yeseva One', cursive;
     letter-spacing: 0.2vw;
@@ -517,6 +522,7 @@ a{
 
 .services-section {
     background: var(--coloro-aae);
+    display: none;
 
 }
 
@@ -839,6 +845,154 @@ a{
 
 
 
+.services-section-only-ad {
+
+}
+
+.services-box-ad {
+  
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 90vw;
+  height: 90vh;
+  perspective: 1000px;
+  margin-bottom: 10vh;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 90vw;
+  height: 90vh;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  /*box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);*/
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 90vw;
+  height: 90vh;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  width: 90vw;
+  height: 90vh;
+  margin-left: 5vw;
+  margin-top: 5vh;
+  border-radius: 30px;
+  background: green;
+  
+}
+
+.flip-card-front h2 {
+  font-weight: 500;
+  font-size: 10vw;
+  top: 5vh;
+  position: absolute;
+
+}
+
+.flip-card-front button {
+  position: absolute;
+  left: 10vw;
+  padding: 0.1vw 0.1vh;
+  border: 1px solid black;
+  border-radius: 1000px;
+  width: 30vw; 
+  color: black;
+  background: transparent;
+  top: 12vh;
+}
+
+.flip-card-front .button-2 {
+  left: 50vw; 
+}
+
+.flip-card-front .plus {
+  position: absolute;
+  top: 25vh;
+  left: 15%;
+  border: 1px solid black;
+  border-radius: 50%;
+  padding: 20px 20px;
+  color: black;
+}
+
+.flip-card-front img {
+  width: 90vw;
+  height: 90vh;
+  border-radius: 30px;
+}
+
+.flip-card-back {
+  width: 90vw;
+  height: 90vh;
+  margin-left: 5vw;
+  margin-top: 5vh;
+  border-radius: 30px;
+  background: #232325;
+  transform: rotateY(180deg);
+}
+
+.flip-card-back h2 {
+  font-weight: 500;
+  font-size: 10vw;
+  top: 5vh;
+  position: absolute;
+  color: white;
+
+}
+
+.flip-card-back button {
+  position: absolute;
+  left: 10vw;
+  padding: 0.1vw 0.1vh;
+  border: 1px solid white;
+  border-radius: 1000px;
+  width: 30vw; 
+  color: black;
+  background: transparent;
+  top: 12vh;
+  color: white;
+}
+
+.flip-card-back .button-2 {
+  left: 50vw; 
+}
+
+.flip-card-back .plus {
+  position: absolute;
+  top: 25vh;
+  left: 15%;
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 20px 20px;
+  color: white;
+}
+
+.flip-card-back .p-p {
+  color: white;
+  position: absolute;
+  top: 35vh;
+}
+
+.flip-card-back .p-p p {
+  margin: 1.5vh;
+}
+
+
+
+
+
 
 
 .work-boxes {
@@ -1088,6 +1242,7 @@ button{
   left: 0;
   right: 0;
   border-radius: 30px;
+  box-shadow: 0 0 0 2px #673ab7, 0 0 4px #673ab7;
   box-shadow: 0 0 0 2px white, 0 0 4px white;
   cursor: pointer;
   border: 4px solid transparent;
@@ -1111,6 +1266,7 @@ input:checked + .slider:before
 {
   transform: translateX(30px); /*translateX(w-h)*/
   background-color: white;
+  background-color: #673ab7;
 }
 
 input:checked + .whiter:before 
@@ -1121,5 +1277,7 @@ input:checked + .whiter:before
 
 input:checked + .slider 
 {
-  box-shadow: 0 0 0 2px white, 0 0 8px white;
+  box-shadow: 0 0 0 2px #ff9800, 0 0 8px #ff9800;
+  box-shadow: 0 0 0 2px #673ab7, 0 0 8px #673ab7;
+
 }

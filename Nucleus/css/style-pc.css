@@ -43,6 +43,8 @@ html {
     font-size: larger;
     padding: 1em;
     margin-left: 4em;
+    font-family: 'Uncial Antiqua', cursive;
+    color: var(--coloro-a);
 }
 
 .mememe img {
@@ -235,6 +237,7 @@ html {
     position: absolute;
     z-index: 3;
     font-size: 3vw;
+    font-weight: 900;
     top: 40vh;
     left: 10vw;
     color: black;
@@ -259,8 +262,8 @@ html {
     left: 10vw;
     font-family: 'Abril Fatface', cursive;
     font-family: sans-serif;
-    font-weight: 600;
-    color: #022e02;
+    font-weight: 800;
+    color: var(--coloro-g);
 }
 
 #d-f span {
@@ -938,7 +941,9 @@ a{
 
 
 
-
+.services-section-only-ad {
+  display: none;
+}
 
 
 
