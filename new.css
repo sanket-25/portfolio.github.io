@@ -1,0 +1,60 @@
+.space div{
+    position:absolute;
+}
+.box1, .box2{
+    transform-style:preserve-3d;
+}
+.box1 div,.box2 div{
+  width:0;
+  height:0;
+  border-width:0 50px 87px;
+  border-style:solid;
+  opacity:.4;
+}
+
+.face1{
+    border-color:transparent transparent #f00;
+    transform-origin:center bottom;
+    transform:translateX(50px) translateY(50px) rotateX(35.36deg);
+}
+
+.face2{
+    border-color:transparent transparent #00f;
+    transform-origin:right bottom;
+    transform:translateX(50px) translateY(50px) rotateY(-90deg) rotateX(-35.36deg);
+}
+
+.face3{
+    border-color:transparent transparent #0f0;
+    transform-origin:left bottom;
+    transform:translateX(50px) translateY(50px)  translateZ(-100px) rotateX(-35.36deg);
+}
+
+.face4{
+    border-color:transparent transparent #f90;
+    transform-origin:left bottom;
+    transform:translateX(50px) translateY(50px) rotateY(90deg) rotateX(-35.36deg);
+}
+
+.box2{
+      transform-origin: center 71px -50px;
+      transform: rotateX(180deg) translateY(-132px);
+}
+
+.space{
+    position:relative;
+    width:100%;
+    height:100%;
+    -webkit-transform-style:preserve-3d;
+    -webkit-transform-origin:center center -50px;
+    -webkit-animation:s 4s linear infinite;
+}
+@-webkit-keyframes s{
+    0%{
+        -webkit-transform:rotateY(0);
+    }
+    100%{
+        -webkit-transform:rotateY(-359.9deg);
+    }
+}
+
