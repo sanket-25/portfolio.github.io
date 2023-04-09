@@ -1,0 +1,309 @@
+* {
+    margin: 0;
+
+}
+
+/*COLOR SCHEME*/
+
+:root {
+  --coloro-x: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png),linear-gradient(119.42deg,#cc00c4 8.94%,#7d2ae8 54.02%,#00c4cc 95.49%);
+
+
+  --coloro-a: floralwhite;
+  --coloro-b: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png),linear-gradient(119.42deg,#cc00c4 8.94%,#7d2ae8 54.02%,#00c4cc 95.49%);
+  --coloro-c: black;
+  --coloro-d: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png), linear-gradient( to right, #ffbd00, #ff5200 );
+  --coloro-e: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png),linear-gradient(119.42deg,#ff5e00 8.94%,red 54.02%,#ff5700 95.49%);
+  --coloro-f: black;
+  --coloro-g: #022e02;
+  --coloro-h: white;
+
+
+  --coloro-aa: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png), darkred;
+  --coloro-ab: gold;
+  --coloro-ac: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png), white;
+  --coloro-ad: black;
+
+
+
+  --coloro-aaa: #00ff00;
+  --coloro-aab: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png),linear-gradient(119.42deg,#cc00c4 8.94%,#7d2ae8 54.02%,#00c4cc 95.49%);
+  --coloro-aac: #ffc107;
+
+  --coloro-aba: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png), darkred !important;
+  --coloro-abb: wheat;
+  --coloro-abc: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png), green;
+  --coloro-abd: darkorange;
+  --coloro-abe: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png), blue;
+  --coloro-abf: gold;
+  --coloro-abg: darkred;
+  --coloro-abh: #7d2ae8;
+  --coloro-abi: #00c4cc;
+  --coloro-abj: #cc00c4;
+
+
+  --coloro-aaaa: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png), linear-gradient(135deg, #f4583a 0%,#cd1e38 100%);
+  --coloro-aaab: #E33E39;
+  --coloro-aaac: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png), #d4fef2;
+  --coloro-aaad: #062930;
+  --coloro-aaae: #FEA98D;
+  --coloro-aaaf: #728E93;
+
+
+}
+
+.dark-theme{
+  --coloro-a: gold !important;
+  --coloro-b: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png),linear-gradient(119.42deg,black 8.94%,black 54.02%,black 95.49%);
+  --coloro-c: white !important;
+  --coloro-d: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png), linear-gradient(119.42deg,#cc00c4 8.94%,#7d2ae8 54.02%,#00c4cc 95.49%);
+  --coloro-e: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png),linear-gradient( to right, #ffbd00, #ff5200 );
+  --coloro-f: white;
+  --coloro-g: green;
+  --coloro-h: gold;
+
+
+  --coloro-aa: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png), #673ab7;
+  --coloro-ab: gold;
+  --coloro-ac: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png), black;
+  --coloro-ad: white;
+
+
+  --coloro-aaa: white;
+  --coloro-aab: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png), black;
+  --coloro-aac: #673ab7;
+
+  --coloro-aba: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png), #673ab7;
+  --coloro-abb: wheat;
+  --coloro-abc: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png), black;
+  --coloro-abd: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png), #673ab7;
+  --coloro-abe: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png), #673ab7;
+  --coloro-abf: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png), black;
+  --coloro-abg: #673ab7;
+  --coloro-abh: #673ab7;
+  --coloro-abi: #673ab7;
+  --coloro-abj: #673ab7;
+
+
+  --coloro-aaaa: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png), black;
+  --coloro-aaab: #673ab7;
+  --coloro-aaac: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png), #673ab7;
+  --coloro-aaad: gold;
+  --coloro-aaae: gold;
+  --coloro-aaaf: black;
+}
+
+
+
+
+
+/*Custom scrollbar*/
+::-webkit-scrollbar {
+  width: 10px;
+  height: 60px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: darkred;
+  border-radius: 10px;
+  border: 3px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* {}
+#box div div {
+	background-color: #0b91b5;
+	background: var(--coloro-e);
+
+}
+
+#box div img {
+	width: 500px;
+}
+
+#box div
+{
+position: absolute;
+height: 500px;
+width: 500px;
+/*border: 1px solid lightgrey;*/
+background: rgba(255,200,100,0.8);
+text-align: center;
+font-size: 200px;
+}
+
+#box
+{
+-webkit-animation-name: animation;
+-webkit-animation-timing-function: ease-in-out;
+-webkit-animation-iteration-count: infinite;
+-webkit-animation-duration: 9s;
+margin:50;
+-webkit-transform-style: preserve-3d;
+-webkit-transform-origin: 250px 250px 0;
+}
+
+#box .one
+{ 
+-webkit-transform: translateZ(250px);
+}
+#box .two
+{ 
+-webkit-transform: rotateX(-90deg) translateZ(250px);
+}
+#box .three 
+{
+-webkit-transform: rotateY(90deg) rotateX(90deg) translateZ(250px);
+}
+#box .four 
+{
+-webkit-transform: rotateY(1deg) rotateZ(90deg) translateZ(250px);
+}
+#box .five
+{ 
+-webkit-transform: rotateY(-90deg) rotateZ(90deg) translateZ(250px);
+}
+#box .six 
+{
+-webkit-transform: rotateY(90deg) translateZ(250px);
+}
+
+@-webkit-keyframes animation
+{
+from,to{}
+16% { -webkit-transform: rotateY(-90deg);}
+33% { -webkit-transform: rotateY(-90deg) rotateZ(135deg);}
+50% { -webkit-transform: rotateY(225deg) rotateZ(135deg);}
+66% { -webkit-transform: rotateY(135deg) rotateX(135deg);}
+83% { -webkit-transform: rotateX(135deg);}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#Preloader {
+	background:#000 url(https://media2.giphy.com/media/jyTk0vpfS0pyqkgpZu/giphy.gif) no-repeat center center;
+	background-size: 70%;
+	height: 100vh;
+	width: 100%;
+	position: fixed;
+	z-index: 1000;
+}
+
+/*.cube {
+  margin: auto;
+  font-size: 24px;
+  height: 1em;
+  width: 1em;
+  position: relative;
+  transform: rotatex(30deg) rotatey(45deg);
+  transform-style: preserve-3d;
+  animation: cube-spin 1.5s infinite ease-in-out alternate;
+}
+
+.side {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform-style: preserve-3d;
+}
+.side::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: currentcolor;
+  transform: translatez(0.5em);
+  animation: cube-explode 1.5s infinite ease-in-out;
+  opacity: 0.5;
+}
+
+.side:nth-child(1) {
+  transform: rotatey(90deg);
+}
+
+.side:nth-child(2) {
+  transform: rotatey(180deg);
+}
+
+.side:nth-child(3) {
+  transform: rotatey(270deg);
+}
+
+.side:nth-child(4) {
+  transform: rotatey(360deg);
+}
+
+.side:nth-child(5) {
+  transform: rotatex(90deg);
+}
+
+.side:nth-child(6) {
+  transform: rotatex(270deg);
+}
+
+@keyframes cube-spin {
+  0% {
+    transform: rotatex(30deg) rotatey(45deg);
+  }
+  100% {
+    transform: rotatex(30deg) rotatey(405deg);
+  }
+}
+@keyframes cube-explode {
+  0% {
+    transform: translatez(0.5em);
+  }
+  50% {
+    transform: translatez(0.75em);
+  }
+  100% {
+    transform: translatez(0.5em);
+  }
+}*/
