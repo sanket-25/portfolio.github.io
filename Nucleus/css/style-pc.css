@@ -974,7 +974,8 @@ a{
 
 .work-box img{
     width: 90%;
-    border-radius: 7em;
+    border-top-right-radius: 7em;
+    border-bottom-left-radius: 7em;
     padding: 2em;
 }
 
