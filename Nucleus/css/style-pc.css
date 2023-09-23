@@ -317,6 +317,7 @@ html {
 
 #About .left-about {
     width: 50%;
+    height: 100vh;
     background: var(--coloro-aa);
 
     
@@ -331,9 +332,10 @@ html {
 
 #About .left-about h2 {
     color: var(--coloro-ab);
+    color: white;
     text-align: center;
     display: flex;
-    position: fixed;
+    position: absolute;
     font-size: 8vw;
     left: 8%;
     top: 37%;
@@ -346,9 +348,11 @@ html {
 }
 
 #about-img {
+    margin: 0;
+    padding: 0;
     display: flex;
-    position: fixed;
-    left: 50%;
+    position: absolute;
+    left: 50vw;
     transform: translate(-50%, 0);
 
     top: 50%;
@@ -418,6 +422,95 @@ html {
 .w {
     margin-top: 1em;
 }
+
+
+
+
+
+#Skills, #Work , #Services, #Contact{
+  display: flex;
+  position: relative;
+  z-index: 100;
+}
+
+.left-skills, .right-work, .left-contact {
+  width: 50vw;
+  background: white;
+}
+
+.right-skills, .left-work, .right-contact {
+  width: 50vw;
+  height: 100vh;
+  background: var(--coloro-aa);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--coloro-ab);
+  color: white;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 0.2vw;
+  font-size: 6vw;
+
+}
+
+.right-skills, .right-contact {
+  background: black;
+}
+/*.right-skills h2 {
+  color: var(--coloro-ab);
+    text-align: center;
+    display: flex;
+    position: fixed;
+    font-size: 8vw;
+    left: 8%;
+    top: 37%;
+    font-family: 'Rubik Glitch', cursive;
+    font-family: 'Yeseva One', cursive;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 0.2vw;
+    align-content: center;
+    justify-content: center;
+}*/
+
+.skills-h {
+  /*color: white;*/
+  /*position: fixed;*/
+  /*font-size: 8vw;*/
+
+}
+
+
+
+
+
+
+.left-skills {
+  padding-top: 5vh;
+  display: grid;
+  grid-gap: 0.5vw;
+  justify-content: space-around;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.left-skills img {
+  width: 12vw;
+  margin: 1vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -901,14 +994,14 @@ a{
 }
 
 
-.left-services {
+/*.left-services {
 
     width: 100%;
 
     
 
 }
-
+*/
 
 
 .left-services h3 {
@@ -928,7 +1021,7 @@ a{
 
 }
 
-.left-services div {
+/*.left-services div {
   display: flex;
   justify-content: center;
   overflow-x: hidden;
@@ -939,7 +1032,7 @@ a{
   margin: 2vw;
 
 
-}
+}*/
 
 
 
@@ -964,7 +1057,7 @@ a{
 
 
 .work-boxes {
-    background-color: black;
+    /*background-color: black;*/
     /*background: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png);*/
 
 }
@@ -1123,27 +1216,32 @@ form button a {
 
 }
 
-.right-contact {
+/*.right-contact {
     width: 50%;
     margin-top: 20vw;
 
+}*/
+.text-for-padding-of-contact {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.right-contact p {
-    color: white;
+.text-for-padding-of-contact p {
+    color: black;
     font-size: 1.5vw;
     padding: 1vw;
 
 }
 
-.right-contact a {
-    color: gold;
+.text-for-padding-of-contact a {
+    color: darkred;
     font-size: 1.5vw;
     padding: 1vw;
 }
 
-.right-contact ul {
-    color: white;
+.text-for-padding-of-contact ul {
+    color: black;
     font-size: 1.5vw;
     padding: 1vw;
 
