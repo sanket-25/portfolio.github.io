@@ -15,8 +15,8 @@
 // 	}
 // })
 
-
-
+var w = document.documentElement.clientWidth || window.innerWidth;
+if ( w>=500 ) {     
 gsap.from(".right-about", {
 	scrollTrigger: {
 		trigger: ".left-about",
@@ -46,7 +46,7 @@ gsap.from(".left-skills", {
 gsap.from(".right-work", {
 	scrollTrigger: {
 		trigger: ".left-work",
-		markers: true,
+		// markers: true,
 		scroller: "body",
 		start: "top 0%",
 		end: "bottom -180%",
@@ -55,3 +55,11 @@ gsap.from(".right-work", {
 
 	}
 })
+
+
+}
+else {
+
+}
+
+

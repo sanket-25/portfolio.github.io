@@ -502,6 +502,20 @@ html {
 
 
 
+.block-for-ad {
+  width: 50vw;
+  height: 100vh;
+  background: var(--coloro-aa);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--coloro-ab);
+  color: white;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 0.2vw;
+  font-size: 6vw;
+  display: none;
+}
 
 
 

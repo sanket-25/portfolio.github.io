@@ -27,7 +27,7 @@ body {
 html {
     /*max-width: 100%;
     overflow-x: hidden;*/
-    background-color: black;
+    /*background-color: yellow;*/
 }
 
 #view {
@@ -319,6 +319,7 @@ display: none;
 
 #About .left-about h2 {
     color: #ffc107;
+    color: white;
     text-align: center;
     display: flex;
     position: relative;
@@ -1004,7 +1005,7 @@ a{
 
 
 .work-boxes {
-    background-color: black;
+    /*background-color: black;*/
 }
 
 
@@ -1027,7 +1028,7 @@ a{
 
 #Contact {
     position: relative;
-    margin-top: 50vw;
+    /*margin-top: 50vw;*/
 }
 
 
@@ -1287,4 +1288,110 @@ input:checked + .slider
   box-shadow: 0 0 0 2px #ff9800, 0 0 8px #ff9800;
   box-shadow: 0 0 0 2px #673ab7, 0 0 8px #673ab7;
 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#Skills, #Work , #Services, #Contact{
+  /*display: flex;*/
+  position: relative;
+  z-index: 100;
+}
+
+.left-skills, .right-work, .left-contact {
+  width: 100vw;
+  background: white;
+
+}
+
+.right-skills, .left-work, .right-contact {
+  width: 100vw;
+  height: 100vh;
+  background: var(--coloro-aa);
+  /*display: flex;*/
+  justify-content: center;
+  align-items: center;
+  color: var(--coloro-ab);
+  color: white;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 0.2vw;
+  font-size: 13vw;
+  display: flex;
+
+}
+
+.right-skills, .right-contact {
+  background: black;
+}
+/*.right-skills h2 {
+  color: var(--coloro-ab);
+    text-align: center;
+    display: flex;
+    position: fixed;
+    font-size: 8vw;
+    left: 8%;
+    top: 37%;
+    font-family: 'Rubik Glitch', cursive;
+    font-family: 'Yeseva One', cursive;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 0.2vw;
+    align-content: center;
+    justify-content: center;
+}*/
+
+.skills-h {
+  /*color: white;*/
+  /*position: fixed;*/
+  /*font-size: 8vw;*/
+
+}
+
+
+
+
+
+
+.left-skills {
+  padding-top: 5vh;
+  display: grid;
+  grid-gap: 0.5vw;
+  justify-content: space-around;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.left-skills img {
+  width: 12vw;
+  margin: 1vw;
+}
+
+
+
+
+.right-skills, .right-contact {
+  display: none;
+}
+.block-for-ad {
+  width: 100vw;
+  height: 100vh;
+  background: var(--coloro-aa);
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--coloro-ab);
+  color: white;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 0.2vw;
+  font-size: 13vw;
+  /*display: none;*/
 }
