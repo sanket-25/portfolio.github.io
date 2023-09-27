@@ -28,6 +28,7 @@ html {
     /*max-width: 100%;
     overflow-x: hidden;*/
     /*background-color: yellow;*/
+    cursor: none;
 }
 
 #view {
@@ -1330,7 +1331,7 @@ input:checked + .slider
 }
 
 .right-skills, .right-contact {
-  background: black;
+  background:  url(https://static.canva.com/web/images/371e3c3….png), black;
 }
 /*.right-skills h2 {
   color: var(--coloro-ab);

@@ -36,7 +36,7 @@ gsap.from(".left-skills", {
 		// markers: true,
 		scroller: "body",
 		start: "top 0%",
-		end: "bottom 10%",
+		end: "bottom -40%",
 		// scrub: 5,
 		pin: true
 
@@ -49,7 +49,7 @@ gsap.from(".right-work", {
 		// markers: true,
 		scroller: "body",
 		start: "top 0%",
-		end: "bottom -180%",
+		end: "bottom -290%",
 		// scrub: 5,
 		pin: true
 

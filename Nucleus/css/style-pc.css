@@ -19,6 +19,8 @@
 
 html {
     background-color: black;
+    cursor: none;
+    
 }
 
 #Home {
@@ -219,7 +221,7 @@ html {
     color: var(--coloro-c);
     padding: 0.2em;
     font-size: large;
-    cursor: pointer;
+    cursor: none;
     font-family: 'Cinzel Decorative', cursive;
     font-weight: bold;
     
@@ -337,7 +339,8 @@ html {
     display: flex;
     position: absolute;
     font-size: 8vw;
-    left: 8%;
+    left: 50%;
+    transform: translate(-50%, 0);
     top: 37%;
     font-family: 'Rubik Glitch', cursive;
     font-family: 'Yeseva One', cursive;
@@ -454,7 +457,7 @@ html {
 }
 
 .right-skills, .right-contact {
-  background: black;
+  background: url(https://static.canva.com/web/images/371e3c3….png), black;
 }
 /*.right-skills h2 {
   color: var(--coloro-ab);
@@ -1073,17 +1076,32 @@ a{
 .work-boxes {
     /*background-color: black;*/
     /*background: url(https://static.canva.com/web/images/371e3c3d29934b8f337db83ad7259c73.png);*/
+    
 
 }
 
+.work-box {
+  border: 2px solid black;
+  margin: 2vw;
+}
 
-
+.work-box h3 {
+  color: black;
+  margin-top: 1vw;
+  font-size: 3vw;
+}
 
 .work-box img{
     width: 90%;
-    border-top-right-radius: 7em;
-    border-bottom-left-radius: 7em;
+    /*border-top-right-radius: 7em;
+    border-bottom-left-radius: 7em;*/
+    border-radius: 3em;
     padding: 2em;
+}
+
+.work-box p{
+  font-size: 1.5vw;
+  margin: 1vw;
 }
 
 
@@ -1213,7 +1231,7 @@ form button{
     font-size: 18px;
     font-weight: 600;
     border-radius: 5px;
-    cursor: pointer;
+    cursor: none;
 }
 
 form button a {
@@ -1239,6 +1257,7 @@ form button a {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  margin-left: 2vw;
 }
 
 .text-for-padding-of-contact p {
@@ -1315,7 +1334,7 @@ form button a {
   border-radius: 30px;
   box-shadow: 0 0 0 2px #673ab7, 0 0 4px #673ab7;
   box-shadow: 0 0 0 2px white, 0 0 4px white;
-  cursor: pointer;
+  cursor: none;
   border: 4px solid transparent;
   overflow: hidden;
   transition: 0.2s;
