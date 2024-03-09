@@ -274,7 +274,7 @@ display: none;
 .home-button button {
   position: relative;
   z-index: 300;
-  top: -70vh;
+  top: -65vh;
   left: 10vw;
   width: 35vw;
   margin: 2vw;
@@ -1309,7 +1309,8 @@ input:checked + .slider
 }
 
 .left-skills, .right-work, .left-contact {
-  width: 100vw;
+  width: 85vw;
+  padding: 5vw;
   background: white;
 
 }
@@ -1362,12 +1363,13 @@ input:checked + .slider
 
 
 .left-skills {
-  padding-top: 5vh;
+  padding-top: 0vh;
   display: grid;
-  grid-gap: 0.5vw;
+  grid-gap: 1vw;
   justify-content: space-around;
   align-items: center;
   grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
 }
 
 .left-skills img {
