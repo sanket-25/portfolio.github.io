@@ -23,6 +23,20 @@ html {
     
 }
 
+.cursor {
+  pointer-events: none;
+  position: fixed;
+  padding: 0.7rem;
+  background-color: #fff;
+  background-color: violet;
+  border-radius: 50%;
+  mix-blend-mode: difference;
+  transition: transform 0.3s ease;
+  z-index: 1000;
+  cursor: url(https://th.bing.com/th/id/OIP.GBovbFXCdXWsOwI3_xRD_wHaHa?pid=ImgDet&rs=1), none;
+  /*height: 100%;*/
+}
+
 #Home {
     background: var(--coloro-b);
     image-rendering: pixelated;
