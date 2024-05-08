@@ -14,52 +14,48 @@
 
 // 	}
 // })
-
 var w = document.documentElement.clientWidth || window.innerWidth;
-if ( w>=500 ) {     
-gsap.from(".right-about", {
-	scrollTrigger: {
-		trigger: ".left-about",
-		// markers: true,
-		scroller: "body",
-		start: "top 0%",
-		end: "bottom 0%",
-		// scrub: 5,
-		pin: true
+if (w >= 500) {
+    gsap.from(".right-about", {
+        scrollTrigger: {
+            trigger: ".left-about",
+            // markers: true,
+            scroller: "body",
+            endTrigger: ".right-about", // Custom trigger set to .right-about
+            end: "bottom bottom",
+			// scrub: 5,
+            pin: true
+        }
+    });
 
-	}
-})
+    gsap.from(".left-skills", {
+        scrollTrigger: {
+            trigger: ".right-skills",
+            // markers: true,
+            scroller: "body",
+            start: "top 0%",
+			endTrigger: ".left-skills", // Custom trigger set to .right-about
+            end: "bottom bottom",
+            // scrub: 5,
+            pin: true
+        }
+    });
 
-gsap.from(".left-skills", {
-	scrollTrigger: {
-		trigger: ".right-skills",
-		// markers: true,
-		scroller: "body",
-		start: "top 0%",
-		end: "bottom -40%",
-		// scrub: 5,
-		pin: true
-
-	}
-})
-
-gsap.from(".right-work", {
-	scrollTrigger: {
-		trigger: ".left-work",
-		// markers: true,
-		scroller: "body",
-		start: "top 0%",
-		end: "bottom -290%",
-		// scrub: 5,
-		pin: true
-
-	}
-})
-
-
+    gsap.from(".right-work", {
+        scrollTrigger: {
+            trigger: ".left-work",
+            // markers: true,
+            scroller: "body",
+            start: "top 0%",
+            endTrigger: ".right-work", // Custom trigger set to .right-about
+            end: "bottom bottom",
+            // scrub: 5,
+            pin: true
+        }
+    });
+} else {
+    // Code for smaller screens
 }
-else {
 
-}
 
 
