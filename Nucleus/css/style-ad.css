@@ -1011,7 +1011,7 @@ a{
 
 .work-box {
   border: 2px solid ;
-  margin: 2vw;
+  /* margin: 2vw; */
   margin-bottom: 4vh;
 }
 
@@ -1025,7 +1025,7 @@ a{
     width: 80%;
     /*border-top-right-radius: 7em;
     border-bottom-left-radius: 7em;*/
-    border-radius: 2em;
+    border-radius: 10vw;
     padding: 2em;
 }
 
