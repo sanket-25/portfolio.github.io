@@ -1018,7 +1018,7 @@ a{
 .work-box h3 {
   color: var(--coloro-work-text);
   margin-top: 1vw;
-  font-size: 3vw;
+  font-size: 5vw;
 }
 
 .work-box img{
@@ -1026,7 +1026,7 @@ a{
     /*border-top-right-radius: 7em;
     border-bottom-left-radius: 7em;*/
     border-radius: 10vw;
-    padding: 2em;
+    padding: 1vh;
 }
 
 .work-box p{
