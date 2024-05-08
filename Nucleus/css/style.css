@@ -52,6 +52,7 @@
   --coloro-skills: url(https://static.canva.com/web/images/371e3c3….png), black;
   --coloro-work-bg: white;
   --coloro-work-text: black;
+  --coloro-email: darkred;
 }
 
 .dark-theme{
@@ -97,6 +98,7 @@
   --coloro-skills: url(https://static.canva.com/web/images/371e3c3….png), #673ab7;
   --coloro-work-bg: black;
   --coloro-work-text: white;
+  --coloro-email: gold;
 }
 
 
