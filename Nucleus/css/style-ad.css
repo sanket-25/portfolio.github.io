@@ -1225,6 +1225,11 @@ form button{
     margin-right: 3vw;
 }
 
+.text-for-padding-of-contact a {
+  color: var(--coloro-email);
+  font-size: 4.5vw;
+  padding: 0vw;
+}
 
 
 
