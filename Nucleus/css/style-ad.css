@@ -1384,7 +1384,7 @@ input:checked + .slider
 .left-skills {
   padding-top: 0vh;
   display: grid;
-  grid-gap: 1vw;
+  grid-gap: 5vw;
   justify-content: space-around;
   align-items: center;
   grid-template-columns: repeat(3, 1fr);
