@@ -1016,6 +1016,7 @@ a{
 }
 
 .work-box h3 {
+  color: var(--coloro-work-text);
   margin-top: 1vw;
   font-size: 3vw;
 }
