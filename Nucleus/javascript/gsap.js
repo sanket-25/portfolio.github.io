@@ -15,7 +15,7 @@
 // 	}
 // })
 var w = document.documentElement.clientWidth || window.innerWidth;
-if (w >= 500) {
+if (w >= 300) {
     gsap.from(".right-about", {
         scrollTrigger: {
             trigger: ".left-about",
