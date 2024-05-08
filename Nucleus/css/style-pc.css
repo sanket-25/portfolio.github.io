@@ -1096,12 +1096,11 @@ a{
 }
 
 .work-box {
-  border: 2px solid black;
+  border: 2px solid;
   margin: 2vw;
 }
 
 .work-box h3 {
-  color: black;
   margin-top: 1vw;
   font-size: 3vw;
 }
@@ -1283,7 +1282,7 @@ form button a {
 }
 
 .text-for-padding-of-contact a {
-    color: darkred;
+    color: var(--coloro-email);
     font-size: 1.5vw;
     padding: 1vw;
 }
