@@ -1010,7 +1010,7 @@ a{
 }
 
 .work-box {
-  border: 2px solid black;
+  border: 2px solid ;
   margin: 2vw;
   margin-bottom: 4vh;
 }
@@ -1022,7 +1022,7 @@ a{
 }
 
 .work-box img{
-    width: 85%;
+    width: 80%;
     /*border-top-right-radius: 7em;
     border-bottom-left-radius: 7em;*/
     border-radius: 2em;
@@ -1330,7 +1330,8 @@ input:checked + .slider
 .left-skills, .right-work, .left-contact {
   /* width: 85vw; */
   padding: 5vw;
-  background: white;
+  background: var(--coloro-work-bg);
+  color: var(--coloro-work-text)
 
 }
 
@@ -1382,8 +1383,8 @@ input:checked + .slider
 
 
 .left-skills {
-  margin-top: 5vh;
-  margin-bottom: 5vh;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
   display: grid;
   grid-gap: 5vw;
   justify-content: space-around;
@@ -1407,11 +1408,11 @@ input:checked + .slider
   width: 100vw;
   height: 100vh;
   background: var(--coloro-aa);
-  background: black;
+  background: var(--coloro-skills);
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--coloro-ab);
+  color: var(--coloro-skills);
   color: white;
   font-family: 'Playfair Display', serif;
   letter-spacing: 0.2vw;

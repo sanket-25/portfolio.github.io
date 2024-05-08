@@ -452,7 +452,8 @@ html {
 
 .left-skills, .right-work, .left-contact {
   width: 50vw;
-  background: white;
+  background: var(--coloro-work-bg);
+  color: var(--coloro-work-text)
 }
 
 .right-skills, .left-work, .right-contact {
@@ -462,7 +463,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--coloro-ab);
+  color: var(--coloro-skills);
   color: white;
   font-family: 'Playfair Display', serif;
   letter-spacing: 0.2vw;
@@ -471,7 +472,7 @@ html {
 }
 
 .right-skills, .right-contact {
-  background: url(https://static.canva.com/web/images/371e3c3….png), black;
+  background: var(--coloro-skills);
 }
 /*.right-skills h2 {
   color: var(--coloro-ab);
@@ -1275,7 +1276,7 @@ form button a {
 }
 
 .text-for-padding-of-contact p {
-    color: black;
+    /* color: black; */
     font-size: 1.5vw;
     padding: 1vw;
 
