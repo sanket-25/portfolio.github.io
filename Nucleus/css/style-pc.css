@@ -1103,6 +1103,7 @@ a{
 .work-box h3 {
   margin-top: 1vw;
   font-size: 3vw;
+  color: var(--coloro-work-text);
 }
 
 .work-box img{
