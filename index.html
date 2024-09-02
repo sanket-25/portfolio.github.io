@@ -513,18 +513,25 @@
       camera.position.z = 5;
     
       let complexityLevel = 0;
+      let increasing = true;
     
-      // Function to increase complexity
-      function increaseComplexity() {
-        complexityLevel++;
-        
-        // Remove the previous line geometry
+      // Function to adjust complexity
+      function adjustComplexity() {
         scene.remove(line1);
         scene.remove(line2);
         scene.remove(line3);
     
-        // Increase complexity based on level
+        if (increasing) {
+          complexityLevel++;
+        } else {
+          complexityLevel--;
+        }
+    
+        // Adjust geometry based on complexity level
         switch(complexityLevel) {
+          case 0:
+            geometry = new THREE.TetrahedronGeometry(3); // Tetrahedron
+            break;
           case 1:
             geometry = new THREE.OctahedronGeometry(3); // Octahedron
             break;
@@ -537,8 +544,15 @@
           case 4:
             geometry = new THREE.IcosahedronGeometry(3, 2); // Further subdivision
             break;
-          default:
+          case 5:
             geometry = new THREE.IcosahedronGeometry(3, 3); // Maximum complexity
+            break;
+        }
+    
+        if (complexityLevel >= 5) {
+          increasing = false;
+        } else if (complexityLevel <= 0) {
+          increasing = true;
         }
     
         edges = new THREE.EdgesGeometry(geometry);
@@ -546,7 +560,6 @@
         line2 = new THREE.LineSegments(edges, material);
         line3 = new THREE.LineSegments(edges, material);
     
-        // Slightly offset each line to simulate thickness
         line1.position.x += 0.02;
         line2.position.x -= 0.02;
         line3.position.y += 0.02;
@@ -555,13 +568,12 @@
         scene.add(line2);
         scene.add(line3);
     
-        if (complexityLevel < 5) {
-          setTimeout(increaseComplexity, 2000); // Increase complexity every 2 seconds
-        }
+        // Loop the complexity adjustment
+        setTimeout(adjustComplexity, 2000);
       }
     
-      // Start the complexity increase after 1 second
-      setTimeout(increaseComplexity, 1000);
+      // Start the complexity adjustment after 1 second
+      setTimeout(adjustComplexity, 1000);
     
       // Create the animation loop
       function animate() {
@@ -592,7 +604,7 @@
         camera.updateProjectionMatrix();
       });
     </script>
-    
+        
 
     
     
