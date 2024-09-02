@@ -479,27 +479,26 @@
 
 
 
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
     <script type="text/javascript">
       // Set up the scene, camera, and renderer
       const scene = new THREE.Scene();
       const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-      const renderer = new THREE.WebGLRenderer({ alpha: true }); // Set alpha to true for transparency
+      const renderer = new THREE.WebGLRenderer({ alpha: true });
       renderer.setSize(window.innerWidth, window.innerHeight);
     
       // Add the renderer to the container
       document.getElementById('icosahedron-container').appendChild(renderer.domElement);
     
-      // Create the icosahedron geometry
-      const geometry = new THREE.IcosahedronGeometry(3); // Increase size by using a larger radius
-      const edges = new THREE.EdgesGeometry(geometry); // Create edges geometry from the icosahedron geometry
-    
-      // Simulate thicker edges by adding multiple offset lines
-      const material = new THREE.LineBasicMaterial({ color: 0xFFD700 }); // Golden color
-      const line1 = new THREE.LineSegments(edges, material);
-      const line2 = new THREE.LineSegments(edges, material);
-      const line3 = new THREE.LineSegments(edges, material);
+      // Create initial simple geometry (Tetrahedron)
+      let geometry = new THREE.TetrahedronGeometry(3);
+      let edges = new THREE.EdgesGeometry(geometry);
+      let material = new THREE.LineBasicMaterial({ color: 0xFFD700 });
+      
+      // Create multiple line segments to simulate thicker edges
+      let line1 = new THREE.LineSegments(edges, material);
+      let line2 = new THREE.LineSegments(edges, material);
+      let line3 = new THREE.LineSegments(edges, material);
     
       // Slightly offset each line to simulate thickness
       line1.position.x += 0.02;
@@ -513,35 +512,88 @@
       // Position the camera
       camera.position.z = 5;
     
+      let complexityLevel = 0;
+    
+      // Function to increase complexity
+      function increaseComplexity() {
+        complexityLevel++;
+        
+        // Remove the previous line geometry
+        scene.remove(line1);
+        scene.remove(line2);
+        scene.remove(line3);
+    
+        // Increase complexity based on level
+        switch(complexityLevel) {
+          case 1:
+            geometry = new THREE.OctahedronGeometry(3); // Octahedron
+            break;
+          case 2:
+            geometry = new THREE.IcosahedronGeometry(3); // Icosahedron
+            break;
+          case 3:
+            geometry = new THREE.IcosahedronGeometry(3, 1); // Subdivided Icosahedron
+            break;
+          case 4:
+            geometry = new THREE.IcosahedronGeometry(3, 2); // Further subdivision
+            break;
+          default:
+            geometry = new THREE.IcosahedronGeometry(3, 3); // Maximum complexity
+        }
+    
+        edges = new THREE.EdgesGeometry(geometry);
+        line1 = new THREE.LineSegments(edges, material);
+        line2 = new THREE.LineSegments(edges, material);
+        line3 = new THREE.LineSegments(edges, material);
+    
+        // Slightly offset each line to simulate thickness
+        line1.position.x += 0.02;
+        line2.position.x -= 0.02;
+        line3.position.y += 0.02;
+    
+        scene.add(line1);
+        scene.add(line2);
+        scene.add(line3);
+    
+        if (complexityLevel < 5) {
+          setTimeout(increaseComplexity, 2000); // Increase complexity every 2 seconds
+        }
+      }
+    
+      // Start the complexity increase after 1 second
+      setTimeout(increaseComplexity, 1000);
+    
       // Create the animation loop
       function animate() {
-          requestAnimationFrame(animate);
+        requestAnimationFrame(animate);
     
-          // Rotate the icosahedron
-          line1.rotation.x += 0.01;
-          line1.rotation.y += 0.01;
+        // Rotate the geometry
+        line1.rotation.x += 0.01;
+        line1.rotation.y += 0.01;
     
-          line2.rotation.x += 0.01;
-          line2.rotation.y += 0.01;
+        line2.rotation.x += 0.01;
+        line2.rotation.y += 0.01;
     
-          line3.rotation.x += 0.01;
-          line3.rotation.y += 0.01;
+        line3.rotation.x += 0.01;
+        line3.rotation.y += 0.01;
     
-          // Render the scene
-          renderer.render(scene, camera);
+        // Render the scene
+        renderer.render(scene, camera);
       }
     
       animate();
     
       // Handle window resize
       window.addEventListener('resize', () => {
-          const width = window.innerWidth;
-          const height = window.innerHeight;
-          renderer.setSize(width, height);
-          camera.aspect = width / height;
-          camera.updateProjectionMatrix();
+        const width = window.innerWidth;
+        const height = window.innerHeight;
+        renderer.setSize(width, height);
+        camera.aspect = width / height;
+        camera.updateProjectionMatrix();
       });
     </script>
+    
+
     
     
 
