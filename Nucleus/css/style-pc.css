@@ -256,7 +256,8 @@ html {
     font-weight: 900;
     top: 40vh;
     left: 10vw;
-    color: black;
+    /* color: black; */
+    color: var(--coloro-f);
 }
 
 
@@ -297,7 +298,7 @@ html {
 .home-button button {
   position: relative;
   z-index: 300;
-  top: -50vh;
+  top: 5vh;
   left: 10vw;
   width: 15vw;
   margin: 2vw;

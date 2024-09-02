@@ -274,7 +274,7 @@ display: none;
 .home-button button {
   position: relative;
   z-index: 300;
-  top: -65vh;
+  top: -36vh;
   left: 10vw;
   width: 35vw;
   margin: 2vw;
