@@ -355,8 +355,8 @@ html {
     position: absolute;
     font-size: 8vw;
     left: 50%;
-    transform: translate(-50%, 0);
-    top: 37%;
+    transform: translate(-50%, -50%);
+    top: 50%;
     font-family: 'Rubik Glitch', cursive;
     font-family: 'Yeseva One', cursive;
     font-family: 'Playfair Display', serif;
@@ -370,7 +370,7 @@ html {
     padding: 0;
     display: flex;
     position: absolute;
-    left: 50vw;
+    left: 100%;
     transform: translate(-50%, 0);
 
     top: 50%;
