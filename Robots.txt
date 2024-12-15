@@ -1,0 +1,22 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://your-domain.com/sitemap.xml
+
+# Directories to Disallow (if any)
+Disallow: /private/
+Disallow: /admin/
+Disallow: /cgi-bin/
+
+# Crawl-delay to prevent overwhelming the server
+Crawl-delay: 10
+
+# Specific search engine directives
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
