@@ -61,13 +61,72 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@800&display=swap"
     rel="stylesheet">
+  <style type="text/css">
+    .cursor {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      position: fixed;
+      pointer-events: none;
+      transition: width 0.2s, height 0.2s, background 0.2s, border 0.2s, box-shadow 0.2s;
+      z-index: 9999;
+      background: #fff;
+      border: 2px solid #222;
+      mix-blend-mode: difference;
+      box-shadow: 0 0 8px rgba(0,0,0,0.15);
+    }
+
+    .cursor--large, .cursor--active {
+      width: 100px !important;
+      height: 100px !important;
+      background: #fff;
+      border: 2px solid #FFD700;
+      box-shadow: 0 0 16px rgba(0,0,0,0.25);
+    }
+
+    .hover-this {
+      transition: all 0.3s ease;
+      /*padding: 10vw;*/
+    }
+
+    .hover-this:hover~.cursor {
+      transform: translate(-50%, -50%) scale(25);
+    }
+
+    @media(min-width: 900px) {
+      nav {
+        display: flex;
+        justify-content: space-around;
+      }
+    }
+
+    @media(max-width: 900px) {
+      nav {
+        /* top: 30%; */
+        /* left: 50vw;
+          transform: translate(-50%, 0); */
+      }
+
+      nav ul {
+        display: flex;
+        justify-content: center;
+        gap: 2vw;
+      }
+
+      .hover-this {
+        width: 100%;
+        padding: 10px 0;
+        display: inline-block;
+      }
+    }
+  </style>
 </head>
 
 <body> <!-- onload="loading()" -->
   <!--     <div id="Preloader"></div> -->
   <section id="Home">
     <div class="top">
-      <h1 class="sanket-h1" style="">SANKET DHURI</h1>
+      <h1 class="sanket-h1">SANKET DHURI</h1>
       <nav class="nav-pc hover-this">
         <ul class="nav-hall-ul">
           <li class="nav-hall">
@@ -82,144 +141,11 @@
           <li class="nav-hall">
             <a href="#Work" class="nav-hall">Work</a>
           </li>
-          <!-- 
-			<li class="nav-hall"><a href="#Contact" class="nav-hall">Contact</a></li><li class="nav-hall"><a href="https://sanket-25.github.io/cdn/Sanket-CV.pdf" class="nav-hall">Resume</a></li> -->
         </ul>
       </nav>
     </div>
-    <hr style="width: 83%; margin-left: auto; margin-right: auto; color: white;">
-    <!-- <img src="./Push.png" id="push"> -->
-    <!-- <div class="grandparent">
-        <div class="parent poly-parent">
-          <div id="polygon"></div>
-        </div>
-      </div> -->
-    <div id="icosahedron-container"></div>
-    <label class="switch">
-      <input type="checkbox">
-      <span class="slider" id="spacex" class="toggler far fa-moon"></span>
-    </label>
-    </div>
-    <style type="text/css">
-      #icosahedron-container {
-        width: 100%;
-        height: 400px;
-        /* Adjust the height as needed */
-        margin: 0 auto;
-      }
-
-      .c-moon {
-        padding: 25px;
-        background-color: #673ab7;
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-        border-radius: 25px;
-      }
-
-      .outer {
-        padding: 25px;
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-        border-radius: 25px;
-      }
-
-      .c-moon h1,
-      h4 {
-        color: white;
-      }
-
-      /*Light-Dark Mode*/
-      i.toggler {
-        color: #673ab7;
-        float: right;
-        font-size: 20px;
-      }
-
-      .dark-mode {
-        background-color: red;
-        color: #673ab7 !important;
-        background: linear-gradient(to right,
-            #ff512f,
-            #673ab7) !important;
-        background-color: #673ab7;
-      }
-
-      .dark-mode i.toggler {
-        color: orange;
-      }
-
-      .dark-mode .c-moon {
-        background-color: #673ab7;
-      }
-
-      .dark-mode h1,
-      .dark-mode h3,
-      .dark-mode h4 {
-        color: black;
-      }
-    </style>
-    <script type="text/javascript">
-      function myFunction() {
-        var element = document.getElementById('polygon');
-        element.classList.toggle("dark-mode");
-      }
-      document.getElementById('dark-mode-btn').addEventListener('click', function (e) {
-        const toggler = document.getElementById('polygon');
-        toggler.classList.toggle('dark-mode');
-        const target = e.target;
-        target.classList.toggle('fa-moon');
-        target.classList.toggle('fa-sun');
-      });
-    </script>
-    <script type="text/javascript">
-      var spacex = document.getElementById("spacex");
-      spacex.onclick = function () {
-        document.body.classList.toggle("dark-theme");
-      }
-      // function changeCss() {
-      //   var bodyElement = document.querySelector("body");
-      //   var aimgElement = document.getElementById("about-img")
-      //   this.scrollY > 1500 ? aimgElement.style.display = "none" : aimgElement.style.display = "block";
-      // }
-      // window.addEventListener("scroll", changeCss, false);
-    </script>
-    <!-- <script type="text/javascript">
-        function changeCss() {
-          var bodyaElement = document.querySelector("body");
-          var ahElement = document.getElementById("about-h")
-          this.scrollY > 1500 ? ahElement.style.display = "none" : ahElement.style.display = "block";
-        }
-        window.addEventListener("scroll", changeCss, false);
-      </script> -->
-    <div class="home-home">
-      <div class="hello">
-        <p>Hello__</p>
-      </div>
-      <!-- <div><h1 class="sanket-h1-0">SANKET DHURI</h1></div> -->
-      <div>
-        <h1 id="d-f">I'm <span class="multi-text"></span>
-        </h1>
-      </div>
-      <script src="https://unpkg.com/typed.js@2.0.14/dist/typed.umd.js"></script>
-      <script type="text/javascript">
-        var typingEffect = new Typed(".multi-text", {
-          strings: ["Web Developer", "App Developer", "Athlete"],
-          loop: true,
-          typeSpeed: 100,
-          backSpeed: 80,
-          startDelay: 1000,
-          backDelay: 1500
-        })
-      </script>
-      <div class="home-button">
-        <button onclick="document.location='#Contact'">Contact Me</button>
-        <button onclick="window.open('https://sanket-25.github.io/cdn/Sanket-CV.pdf', '_blank')">Resume</button>
-      </div>
-    </div>
-    <div class="mememe">
-      <img src="./Nucleus/images/bitmoji0.png">
+    <div class="video-bg-container">
+      <video id="home-bg-video" class="movable-video" src="./Nucleus/mac.mp4" autoplay loop muted playsinline></video>
     </div>
   </section>
   <section id="About">
@@ -379,7 +305,7 @@
             <a href="https://lawfulllamas.github.io/doj.gov.in/" target="_blank">
               <img src="./Nucleus/images/lawful-llamas.jpeg">
             </a>
-            <p>Developing an AI-based interactive chatbot for The Department of Justice’s website involves integrating
+            <p>Developing an AI-based interactive chatbot for The Department of Justice's website involves integrating
               ad
               vanced natural language processing techniques using frameworks like DSPy and libraries such as PyTorch and
               Transformers to provide accurate and responsive user interactions.</p>
@@ -469,73 +395,64 @@
   </section>
   <!-- Custom Cursor -->
   <div class="cursor"></div>
-  <style type="text/css">
-    .hover-this {
-      transition: all 0.3s ease;
-      /*padding: 10vw;*/
-    }
-
-    .hover-this:hover~.cursor {
-      transform: translate(-50%, -50%) scale(25);
-    }
-
-    @media(min-width: 900px) {
-      nav {
-        display: flex;
-        justify-content: space-around;
-      }
-    }
-
-    @media(max-width: 900px) {
-      nav {
-        /* top: 30%; */
-        /* left: 50vw;
-          transform: translate(-50%, 0); */
-      }
-
-      nav ul {
-        display: flex;
-        justify-content: center;
-        gap: 2vw;
-      }
-
-      .hover-this {
-        width: 100%;
-        padding: 10px 0;
-        display: inline-block;
-      }
-    }
-  </style>
   <script type="text/javascript">
       (function () {
-        const link = document.querySelectorAll('nav > .hover-this');
         const cursor = document.querySelector('.cursor');
-        const animateit = function (e) {
-          const span = this.querySelector('span');
-          const {
-            offsetX: x,
-            offsetY: y
-          } = e, {
-            offsetWidth: width,
-            offsetHeight: height
-          } = this,
-            move = 25,
-            xMove = x / width * (move * 2) - move,
-            yMove = y / height * (move * 2) - move;
-          span.style.transform = `translate(${xMove}px, ${yMove}px)`;
-          if (e.type === 'mouseleave') span.style.transform = '';
-        };
-        const editCursor = e => {
-          const {
-            clientX: x,
-            clientY: y
-          } = e;
-          cursor.style.left = x + 'px';
-          cursor.style.top = y + 'px';
-        };
-        link.forEach(b => b.addEventListener('mousemove', animateit));
-        link.forEach(b => b.addEventListener('mouseleave', animateit));
-        window.addEventListener('mousemove', editCursor);
+        // Track clickable elements
+        const clickableSelector = 'a, button, [tabindex="0"], input, textarea, select, label';
+
+        // Helper: get luminance from rgb
+        function getLuminance(rgb) {
+          // rgb: "rgb(r, g, b)" or "rgba(r, g, b, a)"
+          const match = rgb.match(/\d+/g);
+          if (!match) return 1; // default to white
+          const [r, g, b] = match;
+          // sRGB luminance(Y) values
+          const rs = r / 255, gs = g / 255, bs = b / 255;
+          const R = rs <= 0.03928 ? rs / 12.92 : Math.pow((rs + 0.055) / 1.055, 2.4);
+          const G = gs <= 0.03928 ? gs / 12.92 : Math.pow((gs + 0.055) / 1.055, 2.4);
+          const B = bs <= 0.03928 ? bs / 12.92 : Math.pow((bs + 0.055) / 1.055, 2.4);
+          return 0.2126 * R + 0.7152 * G + 0.0722 * B;
+        }
+
+        // Move cursor and update color
+        window.addEventListener('mousemove', function(e) {
+          cursor.style.left = e.clientX + 'px';
+          cursor.style.top = e.clientY + 'px';
+
+          // Detect clickable
+          const el = document.elementFromPoint(e.clientX, e.clientY);
+          if (el && el.closest(clickableSelector)) {
+            cursor.classList.add('cursor--active');
+          } else {
+            cursor.classList.remove('cursor--active');
+          }
+
+          // Get background color for contrast
+          let bgColor = '#fff';
+          let node = el;
+          while (node && node !== document.body) {
+            const style = window.getComputedStyle(node);
+            if (style.backgroundColor && style.backgroundColor !== 'rgba(0, 0, 0, 0)' && style.backgroundColor !== 'transparent') {
+              bgColor = style.backgroundColor;
+              break;
+            }
+            node = node.parentElement;
+          }
+          // Fallback to body bg
+          if (!bgColor || bgColor === 'rgba(0, 0, 0, 0)' || bgColor === 'transparent') {
+            bgColor = window.getComputedStyle(document.body).backgroundColor || '#fff';
+          }
+          // Set cursor color for contrast
+          const luminance = getLuminance(bgColor);
+          if (luminance > 0.5) {
+            cursor.style.background = '#111';
+            cursor.style.borderColor = '#fff';
+          } else {
+            cursor.style.background = '#fff';
+            cursor.style.borderColor = '#111';
+          }
+        });
       })();
   </script>
   <!-- Hide ScrollBar -->
@@ -719,8 +636,22 @@
   }
   </script>
 
-
-
+  <script>
+    // Movable video effect
+    const homeSection = document.getElementById('Home');
+    const videoContainer = document.querySelector('.video-bg-container');
+    homeSection.addEventListener('mousemove', function(e) {
+      const rect = homeSection.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      const moveX = ((x / rect.width) - 0.5) * 60; // -30px to +30px
+      const moveY = ((y / rect.height) - 0.5) * 60; // -30px to +30px
+      videoContainer.style.transform = `translate(-50%, -50%) translate(${moveX}px, ${moveY}px)`;
+    });
+    homeSection.addEventListener('mouseleave', function() {
+      videoContainer.style.transform = 'translate(-50%, -50%)';
+    });
+  </script>
 
 </body>
 
