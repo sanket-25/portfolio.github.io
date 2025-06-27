@@ -730,6 +730,84 @@
     });
   </script>
 
+  <!-- Premium Loader -->
+  <div id="Preloader">
+    <canvas id="loader-ico"></canvas>
+  </div>
+
+  <style type="text/css">
+    #Preloader {
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      width: 100vw; height: 100vh;
+      background: #000;
+      z-index: 99999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: opacity 0.7s cubic-bezier(.77,0,.18,1);
+    }
+    #loader-ico {
+      display: block;
+      margin: 0 auto;
+      width: 120px;
+      height: 120px;
+      max-width: 40vw;
+      max-height: 40vw;
+    }
+  </style>
+
+  <script type="text/javascript">
+    // Premium Loader: Hollow Violet Icosahedron
+    (function() {
+      const loaderDiv = document.getElementById('Preloader');
+      const canvas = document.getElementById('loader-ico');
+      function resizeLoaderCanvas() {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+      }
+      resizeLoaderCanvas();
+      window.addEventListener('resize', resizeLoaderCanvas);
+
+      // Three.js setup
+      const renderer = new THREE.WebGLRenderer({ canvas, alpha: false, antialias: true });
+      renderer.setClearColor(0x000000, 1);
+      renderer.setSize(window.innerWidth, window.innerHeight);
+      const scene = new THREE.Scene();
+      const camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 0.1, 100);
+      camera.position.z = 6;
+
+      // Hollow Icosahedron (wireframe)
+      const geometry = new THREE.IcosahedronGeometry(2, 1);
+      const edges = new THREE.EdgesGeometry(geometry);
+      const material = new THREE.LineBasicMaterial({ color: 0x8f00ff, linewidth: 2 });
+      const line = new THREE.LineSegments(edges, material);
+      scene.add(line);
+
+      function animate() {
+        line.rotation.x += 0.012;
+        line.rotation.y += 0.018;
+        renderer.render(scene, camera);
+        if (loaderDiv) requestAnimationFrame(animate);
+      }
+      animate();
+
+      // Fade out loader when all assets are loaded
+      function hideLoader() {
+        loaderDiv.style.transition = 'opacity 0.7s cubic-bezier(.77,0,.18,1)';
+        loaderDiv.style.opacity = 0;
+        setTimeout(() => {
+          loaderDiv.style.display = 'none';
+        }, 800);
+      }
+      if (document.readyState === 'complete') {
+        setTimeout(hideLoader, 300);
+      } else {
+        window.addEventListener('load', () => setTimeout(hideLoader, 300));
+      }
+    })();
+  </script>
+
 </body>
 
 </html>
