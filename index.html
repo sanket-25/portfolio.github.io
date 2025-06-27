@@ -127,6 +127,7 @@
   <section id="Home">
     <div class="top">
       <h1 class="sanket-h1">SANKET DHURI</h1>
+      <div class="mobile-hr"></div>
       <nav class="nav-pc hover-this">
         <ul class="nav-hall-ul">
           <li class="nav-hall">
@@ -166,28 +167,33 @@
       .top {
         position: relative;
         z-index: 2;
-        padding-top: 16px;
-        padding-bottom: 8px;
+
         display: flex;
         flex-direction: column;
-        align-items: center;
+        width: 100%;
       }
       .sanket-h1 {
-        font-size: 2rem;
-        margin-bottom: 8px;
-        text-align: center;
+
+      }
+      .mobile-hr {
+        width: 80vw;
+        height: 1px;
+        background: rgb(177, 177, 177);
+        align-self: center;
       }
       nav.nav-pc {
         width: 100%;
         display: flex;
         justify-content: center;
+        top: 8vh;
       }
       nav.nav-pc ul.nav-hall-ul {
         flex-direction: row;
         gap: 4vw;
         padding: 0;
-        margin: 0;
         list-style: none;
+        justify-content: center;
+        display: flex;
       }
       nav.nav-pc ul.nav-hall-ul li.nav-hall {
         display: inline-block;
