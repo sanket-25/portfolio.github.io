@@ -52,11 +52,9 @@ display: none;
     background-color: black;
     color: #ffc107;
     height: 100vh;*/
-    background: var(--coloro-b);
+    background: black;
     image-rendering: pixelated;
     /*color: darkred;*/
-    background-color: #673ab7;
-    background-color: white;
     /*color: #ffc107;*/
     height: 100vh;
     overflow: hidden;

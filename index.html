@@ -148,6 +148,77 @@
       <video id="home-bg-video" class="movable-video" src="./Nucleus/mac.mp4" autoplay loop muted playsinline></video>
     </div>
   </section>
+  <style>
+    @media (max-width: 600px) {
+      html, body {
+        overflow-x: hidden !important;
+        width: 100vw;
+      }
+      #Home {
+        position: relative;
+        min-height: 100vh;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+      }
+      .top {
+        position: relative;
+        z-index: 2;
+        padding-top: 16px;
+        padding-bottom: 8px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .sanket-h1 {
+        font-size: 2rem;
+        margin-bottom: 8px;
+        text-align: center;
+      }
+      nav.nav-pc {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+      nav.nav-pc ul.nav-hall-ul {
+        flex-direction: row;
+        gap: 4vw;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+      }
+      nav.nav-pc ul.nav-hall-ul li.nav-hall {
+        display: inline-block;
+      }
+      .video-bg-container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100vw;
+        height: 60vw;
+        max-width: none;
+        max-height: none;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        pointer-events: none;
+        overflow: visible;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      #home-bg-video.movable-video {
+        width: 100vw;
+        height: auto;
+        min-height: 60vw;
+        object-fit: cover;
+        border-radius: 0;
+        box-shadow: none;
+        pointer-events: none;
+      }
+    }
+  </style>
   <section id="About">
     <div class="left-about scrolling">
       <h2 id="about-h">ABOUT</h2>
