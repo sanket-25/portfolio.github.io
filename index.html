@@ -735,7 +735,14 @@
 
   <!-- Premium Loader -->
   <div id="Preloader">
-    <canvas id="loader-ico"></canvas>
+    <div class="loader-content">
+      <canvas id="loader-ico"></canvas>
+      <div class="loading-text">Loading...</div>
+      <div class="loading-bar-container">
+        <div class="loading-bar" id="loading-bar"></div>
+      </div>
+      <div class="loading-percentage" id="loading-percentage">0%</div>
+    </div>
   </div>
 
   <style type="text/css">
@@ -743,57 +750,175 @@
       position: fixed;
       top: 0; left: 0; right: 0; bottom: 0;
       width: 100vw; height: 100vh;
-      background: #000;
+      background: linear-gradient(135deg, #000000 0%, #1a1a2e 50%, #16213e 100%);
       z-index: 99999;
       display: flex;
       align-items: center;
       justify-content: center;
       transition: opacity 0.7s cubic-bezier(.77,0,.18,1);
     }
+    
+    .loader-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+    
     #loader-ico {
       display: block;
-      margin: 0 auto;
-      width: 120px;
-      height: 120px;
-      max-width: 40vw;
-      max-height: 40vw;
+      width: 150px;
+      height: 150px;
+      max-width: 50vw;
+      max-height: 50vw;
+      filter: drop-shadow(0 0 20px rgba(143, 0, 255, 0.6));
+    }
+    
+    .loading-text {
+      color: #8f00ff;
+      font-family: 'Cinzel Decorative', cursive;
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-shadow: 0 0 10px rgba(143, 0, 255, 0.8);
+      letter-spacing: 2px;
+    }
+    
+    .loading-bar-container {
+      width: 200px;
+      height: 4px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 2px;
+      overflow: hidden;
+      position: relative;
+    }
+    
+    .loading-bar {
+      height: 100%;
+      background: linear-gradient(90deg, #8f00ff, #ff00ff, #8f00ff);
+      border-radius: 2px;
+      width: 0%;
+      transition: width 0.3s ease;
+      box-shadow: 0 0 10px rgba(143, 0, 255, 0.8);
+      position: relative;
+    }
+    
+    .loading-bar::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+      animation: shimmer 1.5s infinite;
+    }
+    
+    @keyframes shimmer {
+      0% { transform: translateX(-100%); }
+      100% { transform: translateX(100%); }
+    }
+    
+    .loading-percentage {
+      color: #fff;
+      font-family: 'Big Shoulders Inline Text', cursive;
+      font-size: 1rem;
+      font-weight: bold;
+      text-shadow: 0 0 5px rgba(143, 0, 255, 0.6);
     }
   </style>
 
   <script type="text/javascript">
-    // Premium Loader: Hollow Violet Icosahedron
+    // Enhanced Premium Loader with Progress Bar
     (function() {
       const loaderDiv = document.getElementById('Preloader');
       const canvas = document.getElementById('loader-ico');
+      const loadingBar = document.getElementById('loading-bar');
+      const loadingPercentage = document.getElementById('loading-percentage');
+      
+      let progress = 0;
+      let loadingInterval;
+      
       function resizeLoaderCanvas() {
-        canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight;
+        canvas.width = 300;
+        canvas.height = 300;
       }
       resizeLoaderCanvas();
       window.addEventListener('resize', resizeLoaderCanvas);
 
       // Three.js setup
       const renderer = new THREE.WebGLRenderer({ canvas, alpha: false, antialias: true });
-      renderer.setClearColor(0x000000, 1);
-      renderer.setSize(window.innerWidth, window.innerHeight);
+      renderer.setClearColor(0x000000, 0);
+      renderer.setSize(300, 300);
+      renderer.shadowMap.enabled = true;
+      renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+      
       const scene = new THREE.Scene();
-      const camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 0.1, 100);
-      camera.position.z = 6;
+      const camera = new THREE.PerspectiveCamera(60, 1, 0.1, 100);
+      camera.position.z = 8;
 
-      // Hollow Icosahedron (wireframe)
-      const geometry = new THREE.IcosahedronGeometry(2, 1);
-      const edges = new THREE.EdgesGeometry(geometry);
-      const material = new THREE.LineBasicMaterial({ color: 0x8f00ff, linewidth: 2 });
-      const line = new THREE.LineSegments(edges, material);
-      scene.add(line);
+      // Create multiple icosahedrons for thickness effect
+      const geometries = [];
+      const materials = [];
+      const lines = [];
+      
+      // Create multiple layers with different sizes and colors
+      for (let i = 0; i < 5; i++) {
+        const geometry = new THREE.IcosahedronGeometry(2.5 - i * 0.1, 1);
+        geometries.push(geometry);
+        
+        const edges = new THREE.EdgesGeometry(geometry);
+        const material = new THREE.LineBasicMaterial({ 
+          color: new THREE.Color().setHSL(0.8, 1, 0.5 + i * 0.1),
+          linewidth: 3 + i * 2,
+          transparent: true,
+          opacity: 0.8 - i * 0.15
+        });
+        materials.push(material);
+        
+        const line = new THREE.LineSegments(edges, material);
+        line.position.z = i * 0.1;
+        lines.push(line);
+        scene.add(line);
+      }
+
+      // Add ambient light for glow effect
+      const ambientLight = new THREE.AmbientLight(0x8f00ff, 0.3);
+      scene.add(ambientLight);
+      
+      // Add point light for enhanced glow
+      const pointLight = new THREE.PointLight(0x8f00ff, 1, 20);
+      pointLight.position.set(0, 0, 5);
+      scene.add(pointLight);
 
       function animate() {
-        line.rotation.x += 0.012;
-        line.rotation.y += 0.018;
+        lines.forEach((line, index) => {
+          line.rotation.x += 0.01 + index * 0.002;
+          line.rotation.y += 0.015 + index * 0.003;
+          line.rotation.z += 0.005 + index * 0.001;
+        });
+        
         renderer.render(scene, camera);
-        if (loaderDiv) requestAnimationFrame(animate);
+        if (loaderDiv && loaderDiv.style.display !== 'none') {
+          requestAnimationFrame(animate);
+        }
       }
       animate();
+
+      // Simulate loading progress
+      function updateProgress() {
+        progress += Math.random() * 15;
+        if (progress > 100) progress = 100;
+        
+        loadingBar.style.width = progress + '%';
+        loadingPercentage.textContent = Math.floor(progress) + '%';
+        
+        if (progress >= 100) {
+          clearInterval(loadingInterval);
+          setTimeout(hideLoader, 500);
+        }
+      }
+      
+      loadingInterval = setInterval(updateProgress, 100);
 
       // Fade out loader when all assets are loaded
       function hideLoader() {
@@ -803,11 +928,22 @@
           loaderDiv.style.display = 'none';
         }, 800);
       }
-      if (document.readyState === 'complete') {
-        setTimeout(hideLoader, 300);
-      } else {
-        window.addEventListener('load', () => setTimeout(hideLoader, 300));
+      
+      // Ensure minimum loading time for better UX
+      const minLoadingTime = 2000;
+      const startTime = Date.now();
+      
+      function checkComplete() {
+        const elapsed = Date.now() - startTime;
+        if (elapsed >= minLoadingTime && progress >= 100) {
+          hideLoader();
+        } else if (elapsed < minLoadingTime) {
+          setTimeout(checkComplete, 100);
+        }
       }
+      
+      // Start checking for completion
+      setTimeout(checkComplete, 100);
     })();
   </script>
 
